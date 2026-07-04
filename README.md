@@ -1,6 +1,6 @@
 # Real-Time Object Detection Pipeline
 
-A self-hosted real-time video analytics system that runs YOLOv8 inference in C++ via ONNX Runtime, streams detection events through Apache Kafka, processes data with Python batch aggregation, and serves a live dashboard via React.
+A self-hosted real-time video analytics system running on a Raspberry Pi 5 (8GB). Runs YOLOv8 inference in C++ via ONNX Runtime, streams detection events through Apache Kafka, processes data with Python batch aggregation, and serves a live dashboard via React.
 
 ## Architecture
 
@@ -65,6 +65,7 @@ realtime-detection-pipeline/
 
 ### Prerequisites
 
+- Raspberry Pi 5 (8GB) running Ubuntu Server
 - Docker and Docker Compose
 - CMake 3.20+
 - Python 3.11+
@@ -114,7 +115,7 @@ docker compose -f docker-compose.test.yml up --abort-on-container-exit
 
 ## Deployment
 
-Self-hosted on a home server. GitHub Actions builds Docker images on push to `main`, pushes to GitHub Container Registry, and triggers a deploy via webhook.
+Self-hosted on a Raspberry Pi 5 (8GB). GitHub Actions builds ARM64 Docker images on push to `main`, pushes to GitHub Container Registry, and triggers a deploy via webhook to the Pi.
 
 ## Status
 
