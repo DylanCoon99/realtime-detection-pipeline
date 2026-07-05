@@ -1,7 +1,0 @@
-Target dependency graph (3 targets)
-Target 'ALL_BUILD' in project 'capture-inference'
-➜ Explicit dependency on target 'ZERO_CHECK' in project 'capture-inference'
-➜ Explicit dependency on target 'capture-inference' in project 'capture-inference'
-Target 'capture-inference' in project 'capture-inference'
-➜ Explicit dependency on target 'ZERO_CHECK' in project 'capture-inference'
-Target 'ZERO_CHECK' in project 'capture-inference' (no dependencies)
