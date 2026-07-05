@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

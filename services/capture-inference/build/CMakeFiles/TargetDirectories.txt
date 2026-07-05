@@ -1,0 +1,4 @@
+/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/CMakeFiles/capture-inference.dir
+/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/CMakeFiles/RUN_TESTS.dir
+/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/CMakeFiles/ALL_BUILD.dir
+/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/CMakeFiles/ZERO_CHECK.dir
