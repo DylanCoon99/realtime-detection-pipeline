@@ -42,15 +42,32 @@ int main() {
     session_options.SetGraphOptimizationLevel(GraphOptimizationLevel::ORT_ENABLE_ALL);
 
     // 3. Load the Model and Create a Session
-    const char* model_path = "model.onnx";
+    const char* model_path = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/models/yolov8n.onnx";
 
     Ort::Session session(env, model_path, session_options);
+    
+    // 4. Query the model for input/output names and shape
+    Ort::AllocatorWithDefaultOptions allocator;
 
-    // 4. Set up Mock Data (Example: 1 input image/vector of size 4)
-    std::vector<float> input_tensor_values = {1.0f, 2.0f, 3.0f, 4.0f};
-    std::vector<int64_t> input_shape = {1, 4}; // Batch size = 1, Features = 4
+    auto input_name = session.GetInputNameAllocated(0, allocator);
+    auto output_name = session.GetOutputNameAllocated(0, allocator);
+    std::cout << "Input name: " << input_name.get() << std::endl;
+    std::cout << "Output name: " << output_name.get() << std::endl;
 
-    // 5. Wrap your native buffer into an Ort::Value (Tensor)
+    auto input_type_info = session.GetInputTypeInfo(0);
+    auto tensor_info = input_type_info.GetTensorTypeAndShapeInfo();
+    auto input_shape = tensor_info.GetShape();
+
+    std::cout << "Input shape: ";
+    for (auto dim : input_shape) std::cout << dim << " ";
+    std::cout << std::endl;
+
+    // 5. Create mock input data matching YOLOv8n shape: (1, 3, 640, 640)
+    size_t input_tensor_size = 1;
+    for (auto dim : input_shape) input_tensor_size *= dim;
+
+    std::vector<float> input_tensor_values(input_tensor_size, 0.5f);
+
     auto memory_info = Ort::MemoryInfo::CreateCpu(OrtArenaAllocator, OrtMemTypeDefault);
     Ort::Value input_tensor = Ort::Value::CreateTensor<float>(
         memory_info,
@@ -60,21 +77,27 @@ int main() {
         input_shape.size()
     );
 
-    // 6. Define IO Names (Match your model's exact metadata)
-    const char* input_names[] = {"input_node_name"};
-    const char* output_names[] = {"output_node_name"};
+    // 6. Execute Inference
+    const char* input_names[] = {input_name.get()};
+    const char* output_names[] = {output_name.get()};
 
-    // 7. Execute Inference
     std::vector<Ort::Value> output_tensors = session.Run(
         Ort::RunOptions{nullptr},
         input_names,
-        &input_tensor, 1, // Number of inputs
-        output_names, 1   // Number of outputs
+        &input_tensor, 1,
+        output_names, 1
     );
 
-    // 8. Access the Output Tensor Values
+    // 7. Access the Output Tensor
+    auto output_type_info = output_tensors[0].GetTensorTypeAndShapeInfo();
+    auto output_shape = output_type_info.GetShape();
+
+    std::cout << "Output shape: ";
+    for (auto dim : output_shape) std::cout << dim << " ";
+    std::cout << std::endl;
+
     float* float_array = output_tensors[0].GetTensorMutableData<float>();
-    std::cout << "Top output prediction: " << float_array[0] << std::endl;
+    std::cout << "First output value: " << float_array[0] << std::endl;
     
     
     return 0;
