@@ -28,13 +28,14 @@ if(NOT onnxruntime_FOUND)
     endif()
 endif()
 
-# Gather sources (exclude main.cpp for the library target)
+# Gather sources and headers
 file(GLOB_RECURSE LIB_SOURCES src/*.cpp)
 list(FILTER LIB_SOURCES EXCLUDE REGEX "src/main\\.cpp$")
+file(GLOB_RECURSE HEADERS include/*.h)
 
 # Library target (only if there are sources beyond main.cpp)
 if(LIB_SOURCES)
-    add_library(${PROJECT_NAME}_lib ${LIB_SOURCES})
+    add_library(${PROJECT_NAME}_lib ${LIB_SOURCES} ${HEADERS})
     target_include_directories(${PROJECT_NAME}_lib PUBLIC
         ${CMAKE_SOURCE_DIR}/include
         ${OpenCV_INCLUDE_DIRS}
