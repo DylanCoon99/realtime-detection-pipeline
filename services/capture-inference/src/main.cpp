@@ -2,6 +2,7 @@
 #include <opencv2/opencv.hpp>
 #include <onnxruntime_cxx_api.h>
 
+
 int main() {
     /*
     // 1. Load an image from disk (Reads in BGR format by default)
