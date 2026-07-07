@@ -10,11 +10,51 @@ A self-hosted real-time video analytics system running on a Raspberry Pi 5 (8GB)
 
 | Service | Language | Description |
 |---------|----------|-------------|
-| `capture-inference` | C++ | Captures webcam frames via OpenCV, runs YOLOv8 inference via ONNX Runtime, publishes detection events to Kafka |
+| `capture-inference` | C++ | Captures webcam frames via OpenCV, runs YOLOv8 inference via ONNX Runtime, publishes detection events to Kafka, and streams annotated frames directly to the API |
 | `stream-processor` | C++ | Kafka consumer that aggregates detections in real-time, applies alert rules, writes hot data to Redis |
 | `batch-processor` | Python | Scheduled aggregation of historical detection data, writes to PostgreSQL |
 | `api` | Python (FastAPI) | REST API serving detection data, WebSocket endpoint for live annotated video feed |
 | `frontend` | React/TypeScript | Live camera feed with bounding box overlays, detection timeline, object class charts, alert configuration |
+
+### Data Flow
+
+`capture-inference` produces two separate outputs:
+
+```
+Webcam
+  |
+  ▼
+capture-inference (C++)
+  |
+  ├── 1. Capture frame
+  ├── 2. Preprocess
+  ├── 3. Run inference → get detections
+  ├── 4. Draw bounding boxes on the frame
+  |
+  ├──▶ Send annotated frame → API → WebSocket → React dashboard (live video)
+  └──▶ Send detection event → Kafka (just the metadata, no image)
+                                 |
+                           ┌─────┴─────┐
+                           ▼           ▼
+                    stream-processor  batch-processor
+                    (real-time stats) (historical)
+                           |           |
+                           ▼           ▼
+                         Redis     PostgreSQL
+                           |           |
+                           └─────┬─────┘
+                                 ▼
+                            API (REST)
+                                 |
+                                 ▼
+                          React dashboard
+                          (charts, timeline, alerts)
+```
+
+- **Annotated frames** go directly from `capture-inference` to the API via WebSocket. The frontend displays these as a live video feed with bounding box overlays.
+- **Detection events** (small JSON: timestamp, class, confidence, bbox coordinates) go through Kafka for processing and storage. The frontend queries these via REST API for charts, timeline, and alerts.
+
+These paths are independent — if Kafka lags, video still plays. If the video stream drops, charts still update.
 
 ### Infrastructure
 
