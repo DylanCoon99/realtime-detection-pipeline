@@ -31,17 +31,41 @@
 */
 
 
-TensorData& Preprocessor::process(const Frame& frame) const {
+TensorData Preprocessor::process(const Frame& frame) const {
     
+    /*
     
+     cv::Mat cv::dnn::blobFromImage(
+         cv::InputArray image,
+         double scalefactor = 1.0,
+         const cv::Size& size = cv::Size(),
+         const cv::Scalar& mean = cv::Scalar(),
+         bool swapRB = false,
+         bool crop = false,
+         int ddepth = CV_32F
+     );
+
+     
+    */
     
-    
-    struct TensorData& tensor = {
-        .data = ;
-        .shape = {n_, channel_, height_, width_};
+    // Resize, normalize (0-255 -> 0.0-1.0), BGR->RGB, and convert to NCHW layout
+    cv::Mat blob = cv::dnn::blobFromImage(
+        frame.image,
+        1.0 / 255.0,
+        cv::Size(width_, height_),
+        cv::Scalar(0),
+        true,    // swapRB: BGR -> RGB
+        false,
+        CV_32F
+    );
+
+    // blob is a 4D Mat (1x3x640x640), already contiguous NCHW float data
+    float* ptr = blob.ptr<float>(0);
+    size_t total = blob.total();
+
+    return TensorData{
+        std::vector<float>(ptr, ptr + total),
+        {n_, channel_, height_, width_}
     };
-    
-    
-    return tensor;
     
 }

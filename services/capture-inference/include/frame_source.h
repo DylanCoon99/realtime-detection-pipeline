@@ -18,7 +18,9 @@ public:
     
     Frame& process();
     
-    std::string name() const;
+    std::string name() const {
+        return source_name_;
+    }
     
 private:
     std::string source_name_;

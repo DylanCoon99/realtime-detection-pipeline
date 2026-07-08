@@ -57,9 +57,9 @@ Each step of the pipeline will inherit from this abstract class
 
 
 DetectionResult Pipeline::execute() {
-      auto frame = source_.process();
-      auto tensor = preprocessor_.process(frame);
-      auto detections = detector_.process(tensor);
-      auto annotated_frame = postprocessor_.process(frame, detections);
-      return DetectionResult{annotated_frame, detections, frame.metadata};
-  }
+    auto frame = source_.process();
+    auto tensor = preprocessor_.process(frame);
+    auto detections = detector_.process(tensor);
+    auto annotated_frame = postprocessor_.process(frame, detections);
+    return DetectionResult{annotated_frame, detections, frame.metadata};
+}

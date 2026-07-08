@@ -30,8 +30,10 @@ Frame& Source::process() {
     // construct a frame
     struct Frame frame = {
         .image = raw_frame,
-        .frame_number = frame_number_,
-        .timestamp = millis
+        .metadata = FrameData {
+            .frame_number = frame_number_,
+            .timestamp = millis
+        }
     };
     
     // increment the frame number
