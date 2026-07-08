@@ -1,23 +1,35 @@
 #pragma once
 
-#include <opencv2/opencv.hpp
+#include <opencv2/opencv.hpp>
 #include <string>
+#include <chrono>
 
 // structs for capture inference
 
-// Frame
-typedef cv::Mat Frame;
-
-// Processed Frame (a frame of the correct size and format for the model; ready for inference)
-typedef cv::Mat PreProcessedFrame;
-
-// Detection Object
-struct DetectionObject {
-    ProcessedFrame frame; // The processed frame from which the detection was made
-    cv::Rect bounding_box; // Bounding box of the detected object
-    std::string class_label; // Class label of the detected object
-    float confidence_score; // Confidence score of the detection
+struct FrameData {
+    uint32_t frame_number;
+    int64_t timestamp;
 };
 
-// Post Processed Frame
-typedef cv::Mat PostProcessedFrame;
+struct Frame {
+    cv::Mat image;
+    FrameData metadata;
+};
+
+struct TensorData {
+    std::vector<float> data;          // pixel values, CHW layout, normalized [0,1]
+    std::vector<int64_t> shape;       // {1, 3, 640, 640}
+};
+
+struct DetectionObject {
+    cv::Rect bounding_box;
+    std::string class_label;
+    float confidence_score;
+};
+
+struct DetectionResult {
+    Frame frame;                              // annotated frame (with boxes drawn)
+    std::vector<DetectionObject> detections;
+    FrameData metadata;                       // carried from the original frame
+};
+

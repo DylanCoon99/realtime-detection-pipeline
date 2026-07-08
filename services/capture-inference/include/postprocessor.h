@@ -3,18 +3,14 @@
 #include <opencv2/opencv.hpp>
 /*
     - postprocessor: Processes the detection results (e.g., drawing bounding boxes, generating reports).
- 
-    virtual ~PipelineStep() = default;
-    virtual std::any process(const std::any& input) = 0;
-    virtual std::string name() const = 0;
 */
 
 
 class Postprocessor {
+public:
+    Postprocessor() {};
     
-    Postprocessor() : {};
-    
-    PostProcessedFrame process();
+    Frame& process(Frame& frame, std::vector<DetectionObject> detections) const;
     
     std::string name() const;
     

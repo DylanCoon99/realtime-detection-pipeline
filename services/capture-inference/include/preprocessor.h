@@ -4,23 +4,23 @@
 /*
     - preprocessor: Prepares the captured frames for inference (e.g., resizing, normalization). Outputs a
     processed frame (e.g., cv::Mat).
- 
-    virtual ~PipelineStep() = default;
-    virtual std::any process(const std::any& input) = 0;
-    virtual std::string name() const = 0;
 */
 
 
 class Preprocessor {
+public:
+    Preprocessor(int n, int channel, int height, int width)
+        : n_(n), channel_(channel), height_(height), width_(width) { };
     
-    Preprocessor() : {};
-    
-    ProcessedFrame process();
+    TensorData& process(const Frame& frame) const;
     
     std::string name() const;
     
 private:
-    
+    int n_;
+    int channel_;
+    int height_;
+    int width_;
     
 };
 

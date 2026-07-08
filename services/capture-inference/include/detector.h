@@ -5,19 +5,16 @@
      - detector: Performs object detection on the preprocessed frames. Outputs a detection object (e.g.,
     bounding boxes, class labels, confidence scores).
  
-    virtual ~PipelineStep() = default;
-    virtual std::any process(const std::any& input) = 0;
-    virtual std::string name() const = 0;
+    The detector will own the onnx environment (load the model, perform the inference, etc.)
+ 
 */
 
 
 class Detector {
+public:
+    Detector() {};
     
-    Detector() : {};
-    
-    DetectionObject process();
-    
-    std::string name() const;
+    std::vector<DetectionObject> process(const ProcessedFrame&) const;
     
 private:
     
