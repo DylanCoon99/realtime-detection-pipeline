@@ -13,10 +13,10 @@
 
 class Source {
 public:
-    // need to find a way to initialize the cv::VideoCapture object (e.g., camera index or video file path)
-    Source(std::string source_name, int source_id);
+    Source(std::string source_name, int source_id);          // webcam
+    Source(std::string source_name, const std::string& path); // video file
     
-    Frame& process();
+    Frame process();
     
     std::string name() const {
         return source_name_;

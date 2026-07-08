@@ -6,15 +6,23 @@
 
 Source::Source(std::string source_name, int source_id)
     : source_name_(source_name), cap_(source_id), frame_number_(0) {
-        
+
     if (!cap_.isOpened()) {
         throw std::runtime_error("Failed to open video source: " + source_name_);
     }
 }
 
+Source::Source(std::string source_name, const std::string& path)
+    : source_name_(source_name), cap_(path), frame_number_(0) {
+
+    if (!cap_.isOpened()) {
+        throw std::runtime_error("Failed to open video file: " + path);
+    }
+}
 
 
-Frame& Source::process() {
+
+Frame Source::process() {
     
     // read next image from the video source
     cv::Mat raw_frame;
@@ -38,5 +46,5 @@ Frame& Source::process() {
     
     // increment the frame number
     ++frame_number_;
-    
+    return frame;
 }

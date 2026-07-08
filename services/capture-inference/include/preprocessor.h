@@ -1,5 +1,6 @@
 #pragma once
 
+#include "types.h"
 #include <opencv2/opencv.hpp>
 /*
     - preprocessor: Prepares the captured frames for inference (e.g., resizing, normalization). Outputs a
