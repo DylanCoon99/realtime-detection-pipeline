@@ -3,12 +3,12 @@
 ## Phase 1: Lab / Model Prep
 
 - [x] Export YOLOv8 model to ONNX format
-- [ ] Experiment with OpenCV — basic image capture pipeline
-- [ ] Test model inference in ONNX Runtime environment
+- [x] Experiment with OpenCV — basic image capture pipeline
+- [x] Test model inference in ONNX Runtime environment
 
 ## Phase 2: capture-inference (C++)
 
-- [ ] Set up CMake project with src, include, test directories
+- [x] Set up CMake project with src, include, test directories
 - [ ] Integrate OpenCV — capture frames from USB webcam
 - [ ] Integrate ONNX Runtime — load model and run inference on frames
 - [ ] Parse YOLO output — bounding boxes, class IDs, confidence scores
