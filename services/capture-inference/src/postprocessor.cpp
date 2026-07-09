@@ -36,6 +36,8 @@ Frame& Postprocessor::process(Frame& frame, std::vector<DetectionObject>& detect
     
     
     std::vector<DetectionObject> filtered_detections;
+    
+    // NMS Implementation
 
     while (!detections.empty()) {
         // keep the highest confidence detection
