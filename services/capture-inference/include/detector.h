@@ -19,11 +19,11 @@ public:
     std::vector<DetectionObject> process(TensorData& tensor);
     
 private:
+    const char* model_path_ = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/models/yolov8n.onnx";
     Ort::Env env_;
     Ort::SessionOptions session_options_;
     Ort::Session session_;
     Ort::AllocatorWithDefaultOptions allocator_;
-    const char* model_path_ = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/models/yolov8n.onnx";
     float confidence_threshold_;
 
 };

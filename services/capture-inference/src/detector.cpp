@@ -62,7 +62,8 @@ static Ort::SessionOptions make_session_options() {
 
 
 Detector::Detector(float confidence_threshold)
-    : env_(ORT_LOGGING_LEVEL_WARNING, "ONNX_Inference"),
+    : model_path_("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/models/yolov8n.onnx"),
+      env_(ORT_LOGGING_LEVEL_WARNING, "ONNX_Inference"),
       session_options_(make_session_options()),
       session_(env_, model_path_, session_options_),
       allocator_(),
@@ -174,9 +175,7 @@ std::vector<DetectionObject> Detector::process(TensorData& tensor) {
             result.push_back(detection);
         }
        
-            
     }
-    
     
     return result;
         
