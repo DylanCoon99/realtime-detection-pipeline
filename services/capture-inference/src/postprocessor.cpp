@@ -34,7 +34,6 @@ Frame& Postprocessor::process(Frame& frame, std::vector<DetectionObject>& detect
         return a.confidence_score > b.confidence_score;
     });
     
-    
     std::vector<DetectionObject> filtered_detections;
     
     // NMS Implementation
