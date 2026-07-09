@@ -14,15 +14,17 @@
 
 class Detector {
 public:
-    Detector();
-    
-    std::vector<DetectionObject> process(const TensorData& tensor) const;
+    Detector(float confidence_threshold = 0.25f);
+
+    std::vector<DetectionObject> process(TensorData& tensor);
     
 private:
     Ort::Env env_;
     Ort::SessionOptions session_options_;
     Ort::Session session_;
+    Ort::AllocatorWithDefaultOptions allocator_;
     const char* model_path_ = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/models/yolov8n.onnx";
-    
+    float confidence_threshold_;
+
 };
 
