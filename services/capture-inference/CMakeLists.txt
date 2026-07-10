@@ -38,6 +38,7 @@ if(LIB_SOURCES)
     add_library(${PROJECT_NAME}_lib ${LIB_SOURCES} ${HEADERS})
     target_include_directories(${PROJECT_NAME}_lib PUBLIC
         ${CMAKE_SOURCE_DIR}/include
+        ${CMAKE_SOURCE_DIR}/third_party
         ${OpenCV_INCLUDE_DIRS}
     )
 
