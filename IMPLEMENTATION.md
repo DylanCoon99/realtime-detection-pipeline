@@ -9,12 +9,13 @@
 ## Phase 2: capture-inference (C++)
 
 - [x] Set up CMake project with src, include, test directories
-- [ ] Integrate OpenCV — capture frames from USB webcam
-- [ ] Integrate ONNX Runtime — load model and run inference on frames
-- [ ] Parse YOLO output — bounding boxes, class IDs, confidence scores
+- [x] Integrate OpenCV — capture frames from USB webcam
+- [x] Integrate ONNX Runtime — load model and run inference on frames
+- [x] Parse YOLO output — bounding boxes, class IDs, confidence scores
 - [ ] Integrate librdkafka — publish detection events to Kafka
 - [ ] Define detection event schema (JSON/protobuf)
-- [ ] Add Google Test unit tests
+- [x] Add Google Test unit tests
+- [x] MJPEG streamer — serve annotated frames over HTTP
 - [ ] Write Dockerfile
 - [ ] Test on Raspberry Pi 5 with real webcam
 
@@ -49,8 +50,9 @@
 
 ## Phase 6: frontend (React/TypeScript)
 
-- [ ] Scaffold React/TypeScript project
-- [ ] Live camera feed with bounding box overlays via WebSocket
+- [x] Scaffold React/TypeScript project (Vite + Tailwind)
+- [x] Live camera feed via MJPEG stream
+- [x] Stream connection status indicator
 - [ ] Detection timeline view
 - [ ] Object class distribution charts
 - [ ] Alert configuration UI
