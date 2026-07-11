@@ -7,6 +7,7 @@
 Source::Source(std::string source_name, int source_id)
     : source_name_(source_name), cap_(source_id), frame_number_(0) {
 
+        
     if (!cap_.isOpened()) {
         throw std::runtime_error("Failed to open video source: " + source_name_);
     }

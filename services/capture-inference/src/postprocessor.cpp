@@ -55,8 +55,17 @@ Frame& Postprocessor::process(Frame& frame, std::vector<DetectionObject>& detect
     }
 
     detections = std::move(filtered_detections);
-    
-    
+
+    // scale bounding boxes from model space (640x640) to original frame dimensions
+    float scale_x = static_cast<float>(frame.image.cols) / 640.0f;
+    float scale_y = static_cast<float>(frame.image.rows) / 640.0f;
+
+    for (auto& det : detections) {
+        det.bounding_box.x = static_cast<int>(det.bounding_box.x * scale_x);
+        det.bounding_box.y = static_cast<int>(det.bounding_box.y * scale_y);
+        det.bounding_box.width = static_cast<int>(det.bounding_box.width * scale_x);
+        det.bounding_box.height = static_cast<int>(det.bounding_box.height * scale_y);
+    }
 
     // draw bounding boxes and labels
     for (const auto& det : detections) {

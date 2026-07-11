@@ -31,6 +31,7 @@ public:
     void start();
     void stop();
     void update_frame(const cv::Mat& frame);
+    //void serve();
 
 private:
     void serve();
