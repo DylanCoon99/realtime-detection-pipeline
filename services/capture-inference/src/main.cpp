@@ -18,7 +18,7 @@ int main() {
     bool running = true;
     
     // MJPEG Streamer
-    MjpegStreamer streamer(8081);
+    MjpegStreamer streamer(8081, 100);
     streamer.start();
 
     std::cout << "Pipeline running. Press Ctrl+C to stop." << std::endl;
