@@ -12,8 +12,8 @@
 - [x] Integrate OpenCV — capture frames from USB webcam
 - [x] Integrate ONNX Runtime — load model and run inference on frames
 - [x] Parse YOLO output — bounding boxes, class IDs, confidence scores
-- [ ] Integrate librdkafka — publish detection events to Kafka
-- [ ] Define detection event schema (JSON/protobuf)
+- [x] Integrate librdkafka — publish detection events to Kafka
+- [x] Define detection event schema (JSON)
 - [x] Add Google Test unit tests
 - [x] MJPEG streamer — serve annotated frames over HTTP
 - [x] Write Dockerfile
