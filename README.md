@@ -85,11 +85,12 @@ These paths are independent — if Kafka lags, video still plays. If the video s
 ```
 realtime-detection-pipeline/
 ├── services/
-│   ├── capture-inference/     # C++ frame capture + YOLO inference
+│   ├── capture-inference/     # C++ frame capture + YOLO inference + MJPEG stream
 │   ├── stream-processor/      # C++ Kafka consumer + real-time aggregation
 │   ├── batch-processor/       # Python batch aggregation
-│   ├── api/                   # FastAPI REST + WebSocket server
+│   ├── api/                   # FastAPI REST server
 │   └── frontend/              # React dashboard
+├── infra/                     # Infrastructure config (Kafka, Redis, Postgres, etc.)
 ├── docker-compose.yml
 ├── Caddyfile
 ├── prometheus.yml
@@ -115,8 +116,8 @@ realtime-detection-pipeline/
 ### Local Development
 
 ```bash
-# Start infrastructure services
-docker compose up -d kafka zookeeper redis postgres
+# Start infrastructure services (Kafka, Redis, PostgreSQL)
+docker compose up -d kafka redis postgres
 
 # Build and run C++ services locally
 cd services/capture-inference

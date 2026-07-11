@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include "types.h"
 #include "detector.h"
 #include "coco_classes.h"
@@ -61,11 +62,18 @@ static Ort::SessionOptions make_session_options() {
 }
 
 
-Detector::Detector(float confidence_threshold)
-    : model_path_("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/models/yolov8n.onnx"),
+static std::string resolve_model_path(const std::string& path) {
+    if (!path.empty()) return path;
+    const char* env = std::getenv("MODEL_PATH");
+    if (env) return std::string(env);
+    return "/app/models/yolov8n.onnx";
+}
+
+Detector::Detector(const std::string& model_path, float confidence_threshold)
+    : model_path_(resolve_model_path(model_path)),
       env_(ORT_LOGGING_LEVEL_WARNING, "ONNX_Inference"),
       session_options_(make_session_options()),
-      session_(env_, model_path_, session_options_),
+      session_(env_, model_path_.c_str(), session_options_),
       allocator_(),
       confidence_threshold_(confidence_threshold) {
 }

@@ -16,7 +16,7 @@
 - [ ] Define detection event schema (JSON/protobuf)
 - [x] Add Google Test unit tests
 - [x] MJPEG streamer — serve annotated frames over HTTP
-- [ ] Write Dockerfile
+- [x] Write Dockerfile
 - [ ] Test on Raspberry Pi 5 with real webcam
 
 ## Phase 3: stream-processor (C++)
@@ -56,11 +56,15 @@
 - [ ] Detection timeline view
 - [ ] Object class distribution charts
 - [ ] Alert configuration UI
-- [ ] Write Dockerfile
+- [x] Write Dockerfile
 
 ## Phase 7: Infrastructure & Deployment
 
-- [ ] docker-compose.yml — wire all services + Kafka, Redis, Postgres
+- [x] Set up Kafka (KRaft mode, no Zookeeper) in docker-compose
+- [ ] Set up Redis in docker-compose
+- [ ] Set up PostgreSQL in docker-compose
+- [x] Verify Kafka — produce/consume test messages from CLI
+- [ ] docker-compose.yml — wire all services together
 - [ ] Caddyfile — reverse proxy with SSL
 - [ ] prometheus.yml — metrics collection
 - [ ] Grafana dashboards
