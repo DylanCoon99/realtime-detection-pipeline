@@ -29,7 +29,7 @@ TEST(DetectorTest, ConstructsSuccessfully) {
 }
 
 TEST(DetectorTest, ConstructsWithCustomThreshold) {
-    EXPECT_NO_THROW(Detector(0.5f));
+    EXPECT_NO_THROW(Detector("", 0.5f));
 }
 
 // Inference produces results
@@ -59,7 +59,7 @@ TEST(DetectorTest, DetectsBusInBusImage) {
 
 TEST(DetectorTest, ConfidenceScoresAboveThreshold) {
     float threshold = 0.25f;
-    Detector detector(threshold);
+    Detector detector("", threshold);
     TensorData tensor = make_bus_tensor();
     auto detections = detector.process(tensor);
     for (const auto& d : detections) {
@@ -95,8 +95,8 @@ TEST(DetectorTest, HigherThresholdProducesFewerDetections) {
     TensorData tensor_low = make_bus_tensor();
     TensorData tensor_high = make_bus_tensor();
 
-    Detector low_threshold(0.1f);
-    Detector high_threshold(0.8f);
+    Detector low_threshold("", 0.1f);
+    Detector high_threshold("", 0.8f);
 
     auto detections_low = low_threshold.process(tensor_low);
     auto detections_high = high_threshold.process(tensor_high);
@@ -112,7 +112,7 @@ TEST(DetectorTest, BlankImageProducesNoHighConfidenceDetections) {
     Preprocessor pp(1, 3, 640, 640, "test");
     TensorData tensor = pp.process(frame);
 
-    Detector detector(0.5f);
+    Detector detector("", 0.5f);
     auto detections = detector.process(tensor);
     EXPECT_EQ(detections.size(), 0);
 }

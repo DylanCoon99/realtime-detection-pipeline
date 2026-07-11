@@ -3,6 +3,7 @@
 #include <onnxruntime_cxx_api.h>
 #include "pipeline.h"
 #include "mjpeg_streamer.h"
+#include "kafka_publisher.h"
 
 
 int main() {
@@ -21,7 +22,12 @@ int main() {
     MjpegStreamer streamer(8081, 100);
     streamer.start();
 
-    std::cout << "Pipeline running. Press Ctrl+C to stop." << std::endl;
+    // Kafka Publisher
+    std::cerr << "[main] Creating Kafka publisher..." << std::endl;
+    KafkaPublisher publisher("localhost:29092", "detections");
+    std::cerr << "[main] Kafka publisher created." << std::endl;
+
+    std::cerr << "[main] Pipeline running. Press Ctrl+C to stop." << std::endl;
 
     while (running) {
         DetectionResult result = pipeline.execute();
@@ -29,7 +35,9 @@ int main() {
         if (result.frame.image.empty()) break;
 
         streamer.update_frame(result.frame.image);
-        // publisher.publish(result.detections);  // kafka later
+        std::cerr << "[main] Frame " << result.metadata.frame_number
+                  << ", detections: " << result.detections.size() << std::endl;
+        publisher.publish(result.detections, result.metadata);
     }
 
     streamer.stop();

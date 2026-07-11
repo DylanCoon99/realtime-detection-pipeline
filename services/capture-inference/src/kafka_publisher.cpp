@@ -1,6 +1,6 @@
 #include "kafka_publisher.h"
+#include "json.hpp"
 #include <iostream>
-#include <sstream>
 
 KafkaPublisher::KafkaPublisher(const std::string& broker, const std::string& topic)
     : topic_name_(topic), producer_(nullptr) {
@@ -13,6 +13,7 @@ KafkaPublisher::KafkaPublisher(const std::string& broker, const std::string& top
     if (!producer_) {
         throw std::runtime_error("Failed to create Kafka producer: " + errstr);
     }
+    std::cout << "[KafkaPublisher] Connected to broker: " << broker << ", topic: " << topic << std::endl;
 
     delete conf;
 }
@@ -27,6 +28,10 @@ KafkaPublisher::~KafkaPublisher() {
 void KafkaPublisher::publish(const std::vector<DetectionObject>& detections, const FrameData& metadata) {
     std::string payload = serialize(detections, metadata);
 
+    std::cout << "[KafkaPublisher] Publishing frame " << metadata.frame_number
+              << " (" << detections.size() << " detections, "
+              << payload.size() << " bytes)" << std::endl;
+
     RdKafka::ErrorCode err = producer_->produce(
         topic_name_,
         RdKafka::Topic::PARTITION_UA,
@@ -39,37 +44,40 @@ void KafkaPublisher::publish(const std::vector<DetectionObject>& detections, con
     );
 
     if (err != RdKafka::ERR_NO_ERROR) {
-        std::cerr << "Kafka produce failed: " << RdKafka::err2str(err) << std::endl;
+        std::cerr << "[KafkaPublisher] Produce FAILED: " << RdKafka::err2str(err) << std::endl;
+    } else {
+        std::cout << "[KafkaPublisher] Produce OK" << std::endl;
     }
 
     producer_->poll(0);
+
+    // check outgoing queue size
+    int queue_len = producer_->outq_len();
+    if (queue_len > 0) {
+        std::cout << "[KafkaPublisher] Outgoing queue: " << queue_len << " messages" << std::endl;
+    }
 }
 
 std::string KafkaPublisher::serialize(const std::vector<DetectionObject>& detections, const FrameData& metadata) {
-    // TODO: consider using a JSON library (nlohmann/json) for robustness.
-    //       Manual serialization works for now since the schema is simple.
+    using json = nlohmann::json;
 
-    std::ostringstream json;
-    json << "{";
-    json << "\"frame_number\":" << metadata.frame_number << ",";
-    json << "\"timestamp\":" << metadata.timestamp << ",";
-    json << "\"detections\":[";
+    json j;
+    j["frame_number"] = metadata.frame_number;
+    j["timestamp"] = metadata.timestamp;
+    j["detections"] = json::array();
 
-    for (size_t i = 0; i < detections.size(); i++) {
-        const auto& d = detections[i];
-        json << "{";
-        json << "\"class\":\"" << d.class_label << "\",";
-        json << "\"confidence\":" << d.confidence_score << ",";
-        json << "\"bbox\":{";
-        json << "\"x\":" << d.bounding_box.x << ",";
-        json << "\"y\":" << d.bounding_box.y << ",";
-        json << "\"w\":" << d.bounding_box.width << ",";
-        json << "\"h\":" << d.bounding_box.height;
-        json << "}";
-        json << "}";
-        if (i < detections.size() - 1) json << ",";
+    for (const auto& d : detections) {
+        j["detections"].push_back({
+            {"class", d.class_label},
+            {"confidence", d.confidence_score},
+            {"bbox", {
+                {"x", d.bounding_box.x},
+                {"y", d.bounding_box.y},
+                {"w", d.bounding_box.width},
+                {"h", d.bounding_box.height}
+            }}
+        });
     }
 
-    json << "]}";
-    return json.str();
+    return j.dump();
 }
