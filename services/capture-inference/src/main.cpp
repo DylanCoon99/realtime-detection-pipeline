@@ -10,7 +10,7 @@ int main() {
     // Pipeline steps
     Source source("webcam", 0);
     Preprocessor preprocessor(1, 3, 640, 640, "preprocessor");
-    Detector detector(.5);
+    Detector detector("", 0.5f);
     Postprocessor postprocessor("postprocessor");
     
     // Pipeline

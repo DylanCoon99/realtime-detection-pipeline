@@ -9,22 +9,22 @@
 /* Begin PBXAggregateTarget section */
 		40D83282B7EE7BC8738432E4 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 604AA26BACCE41E3A3B9F64B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = B0739EC9A5334A64998F8841 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				D99E680B5EFA664675A6D5F3 /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				3B65297EA92A45E8B8B9630F /* PBXTargetDependency */,
-				B85C051C99034AABA4DC91C0 /* PBXTargetDependency */,
-				58296C97836E4CDA8A318B8B /* PBXTargetDependency */,
-				06D17F82AAF24CB4AB871F84 /* PBXTargetDependency */,
+				E16CEF6D5FFD457FB3FC124F /* PBXTargetDependency */,
+				B7534E1DD78140B6AAF3CCA0 /* PBXTargetDependency */,
+				EACAF1E1F20D44F180A5B2C3 /* PBXTargetDependency */,
+				E6AD63E7AF8D4BE8A212CB22 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		698B4784DFB7798FB29D1E4E /* RUN_TESTS */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = EFF4459FFBA741FC8060D890 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildConfigurationList = 779F2073532C40409C0324E7 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
 			buildPhases = (
 				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
 			);
@@ -35,7 +35,7 @@
 		};
 		6BADB52F5DC0614B384DE362 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 2C8375AE64174D1187A1E9B3 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = F612A00C56C9404FB8BC8E23 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				855FAAF6CCA2584E66EBEB3A /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -47,55 +47,57 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		00C8E5953E044B9D8ED6B1D1 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 611132FB46C645BDB94A2D3F /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/main.cpp */; };
-		0FDA6F6B240F46C29ECA0AD2 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/mjpeg_streamer.h */ = {isa = PBXBuildFile; fileRef = 661A1A671AEC48E78E75C471 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/mjpeg_streamer.h */; };
-		16217E66C87F4069A20DE8BF /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/frame_source.cpp */ = {isa = PBXBuildFile; fileRef = 168CA8098A424EEA80F30C72 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/frame_source.cpp */; };
-		1916E69189CA47AD95ED396F /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/preprocessor.cpp */ = {isa = PBXBuildFile; fileRef = A6207893B2074565B49584CF /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/preprocessor.cpp */; };
-		268EAD3A6C7A464BB31DB8AC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 5717CF6E34714E23868BD296 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */; };
-		2DC6A48551AB438DBA31668D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_postprocessor.cpp */ = {isa = PBXBuildFile; fileRef = 3A74D8CF4EB9445284123661 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_postprocessor.cpp */; };
-		3E53007E82834C2EB0742290 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_frame_source.cpp */ = {isa = PBXBuildFile; fileRef = BD0DE9B7AF2C496B98D685E5 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_frame_source.cpp */; };
-		4DA79F171A23466DBB5779B6 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline.cpp */ = {isa = PBXBuildFile; fileRef = CD60E8377455427DAF1328A3 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline.cpp */; };
-		50F2D47ACA39485399371A30 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/pipeline.h */ = {isa = PBXBuildFile; fileRef = 5DDE515875644F1EBA0DFAAC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/pipeline.h */; };
-		6637CBCC9D8546FCB1F2C980 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/mjpeg_streamer.cpp */ = {isa = PBXBuildFile; fileRef = 91B04BF7A6F84C108D260D70 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/mjpeg_streamer.cpp */; };
-		69B7165B93A84FF49BD02F3D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/postprocessor.cpp */ = {isa = PBXBuildFile; fileRef = 4BF2315B5C7B427FB8616E59 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/postprocessor.cpp */; };
-		82690B1610FA4AAE905530FC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_detector.cpp */ = {isa = PBXBuildFile; fileRef = 4DA9AFE112B04FF887805C49 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_detector.cpp */; };
-		89C2AF7C1CBC43958EA663FD /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_preprocessor.cpp */ = {isa = PBXBuildFile; fileRef = 4143B08C313E4A7ABEE8A585 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_preprocessor.cpp */; };
-		96B46B9B0A3F4182BB41D42D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/types.h */ = {isa = PBXBuildFile; fileRef = F7C61212087F4637AD5323DC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/types.h */; };
-		A610774E06194142976E4528 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/frame_source.h */ = {isa = PBXBuildFile; fileRef = 4A352442336542A0BCB6ED6D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/frame_source.h */; };
-		A7B59403CD254893ACC7793C /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/detector.cpp */ = {isa = PBXBuildFile; fileRef = 00DFCCCE120C46C88C25A2EA /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/detector.cpp */; };
-		B0F791DD15144C528049E1F4 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/preprocessor.h */ = {isa = PBXBuildFile; fileRef = DD8549D2EED340F7ADBD2B93 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/preprocessor.h */; };
-		B271DDAE90A64DB29DCAF32B /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/postprocessor.h */ = {isa = PBXBuildFile; fileRef = 3A4E07D345EA45848D6081D6 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/postprocessor.h */; };
-		C09C319C97F649A58155F253 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B03EB00DC6CA4087B4A4FBC0 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */; };
-		C3BDE22A34B44E079EA9CE1E /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/coco_classes.h */ = {isa = PBXBuildFile; fileRef = 4E8363B518334920B1CF21F4 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/coco_classes.h */; };
-		D35C0EF8FF6E48B3BD682CE4 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4E6AE48684904BC3AABAD0BC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */; };
-		E06002239B3E4CA9AE49D62D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/detector.h */ = {isa = PBXBuildFile; fileRef = 59DA5ACE493A454D9D421A3B /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/detector.h */; };
-		E532FB7AC9AD434EB2C8982C /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline_integration.cpp */ = {isa = PBXBuildFile; fileRef = B099D11622694E6DB044785F /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline_integration.cpp */; };
-		F2AFF96CB6414E2BAFD1D900 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/pipeline.cpp */ = {isa = PBXBuildFile; fileRef = D17B20C9365944929F1842D0 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/pipeline.cpp */; };
+		004FE0BBB4E24BBA87787985 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/frame_source.cpp */ = {isa = PBXBuildFile; fileRef = 159DB9232CE74FF19D3F35CF /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/frame_source.cpp */; };
+		03407E67FAF04915B5488869 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/detector.cpp */ = {isa = PBXBuildFile; fileRef = 2B20C9556FBE41A3B22D2BB3 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/detector.cpp */; };
+		13620477740F4D28BC88DC79 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B6B7403E81E94055B8B7AA2C /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */; };
+		16311F67DF5F4FC18D491F19 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/types.h */ = {isa = PBXBuildFile; fileRef = 935D54F81CC047FFB043E19F /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/types.h */; };
+		24491C20AD4B4D4283484032 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/main.cpp */ = {isa = PBXBuildFile; fileRef = F328809D13284D4C8EA1C4D5 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/main.cpp */; };
+		290968C9D616470FA989C239 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/postprocessor.h */ = {isa = PBXBuildFile; fileRef = 5EF29E1037F94358AAA1EA8E /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/postprocessor.h */; };
+		39F36752357B411DADCF2F75 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/mjpeg_streamer.h */ = {isa = PBXBuildFile; fileRef = BF52BC31042A4B58ABB561D6 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/mjpeg_streamer.h */; };
+		64EC245F2C6E464CAA9B41C0 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/frame_source.h */ = {isa = PBXBuildFile; fileRef = 98C235E858714A9887D5592C /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/frame_source.h */; };
+		6DD70171C50340E69D0951C4 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/pipeline.cpp */ = {isa = PBXBuildFile; fileRef = E675F6C6C9384F0F82350E6B /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/pipeline.cpp */; };
+		6E053ED9D8A3435EA9A7B378 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_detector.cpp */ = {isa = PBXBuildFile; fileRef = B07996D08BBB411285236E6D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_detector.cpp */; };
+		73171DE01C634A0DBF2EF8AC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_preprocessor.cpp */ = {isa = PBXBuildFile; fileRef = 1BB71E8ED5E2452395209C10 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_preprocessor.cpp */; };
+		7C23799782854DAEBF3EA78E /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline_integration.cpp */ = {isa = PBXBuildFile; fileRef = FF880C9073D04B4D86F53331 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline_integration.cpp */; };
+		93B6AFEB8A5644F7B97A7691 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/pipeline.h */ = {isa = PBXBuildFile; fileRef = 8137DCE79A15476CA9E3F2CE /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/pipeline.h */; };
+		96AE66506C3444EDADE60ADF /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/detector.h */ = {isa = PBXBuildFile; fileRef = D5D607B2DE8B4F41A97B3572 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/detector.h */; };
+		9D280C8D025B4CCD8AEAD905 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_postprocessor.cpp */ = {isa = PBXBuildFile; fileRef = 61B6712D1D0840B693B0C400 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_postprocessor.cpp */; };
+		9EA2AD7660AA430EB6F0B4C0 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/postprocessor.cpp */ = {isa = PBXBuildFile; fileRef = AFC8033DC96A449E901F513A /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/postprocessor.cpp */; };
+		AC84D07F9CE841C9A6AF113C /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/kafka_publisher.h */ = {isa = PBXBuildFile; fileRef = 108208B8B74C4C9EB7116303 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/kafka_publisher.h */; };
+		C1ACB288F1334DD08F822FC6 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline.cpp */ = {isa = PBXBuildFile; fileRef = 59C7D90B57B74CD0A88259D0 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline.cpp */; };
+		C3EA0E94825B4CA783A67EDE /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/kafka_publisher.cpp */ = {isa = PBXBuildFile; fileRef = 9E00BA0D42894A1EA4A00D0D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/kafka_publisher.cpp */; };
+		D379F26B2AAE435B8EC9C6D8 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/mjpeg_streamer.cpp */ = {isa = PBXBuildFile; fileRef = 4CB71CDEC5D34EF18E0827BB /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/mjpeg_streamer.cpp */; };
+		D457C82B77184F8C9E1D1B66 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/coco_classes.h */ = {isa = PBXBuildFile; fileRef = 1F3F794656F740F3B671D6E8 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/coco_classes.h */; };
+		D66EF0E139384D578D86B38D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/preprocessor.h */ = {isa = PBXBuildFile; fileRef = 4D59D82182CF49C4AB62CF12 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/preprocessor.h */; };
+		DD1B76E99E3B4BEBB69015EC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/preprocessor.cpp */ = {isa = PBXBuildFile; fileRef = F487592B33124107B0D74B08 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/preprocessor.cpp */; };
+		E661F19356824D21BA16F511 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 50F40C534AA34FA69D6771E1 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */; };
+		EB2CFCD3E3F943DCA33F3D4E /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = FA60BEB0E4AA4A909C2C5F66 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */; };
+		ED1CE6EF25764811B4599A05 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_frame_source.cpp */ = {isa = PBXBuildFile; fileRef = D329D17E8CE6405A8A215AED /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_frame_source.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		0A44FDE6782F4A1C93475DE1 /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		8ABFDEB638944814A736F20A /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		9688B67198E64EB38E97A588 /* MinSizeRel */ = {
+		035DD20EAFE845F1BB456CAC /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
-		A2A979FBC15E4E4289410451 /* Release */ = {
+		631C1E26E130417BB2E014CB /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		6812A64BC2D6400F9C6436C3 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		FF5890B9F140469182BE3AA4 /* Release */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -105,118 +107,120 @@
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		03129BA6EB834DB28016A1AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6BADB52F5DC0614B384DE362;
-			remoteInfo = ZERO_CHECK;
-		};
-		33FB76BDFC724D31AAE96A14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6BADB52F5DC0614B384DE362;
-			remoteInfo = ZERO_CHECK;
-		};
-		555A03BA0517456EA12C91A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C7FB545F01A9180A82D20D7C;
-			remoteInfo = "capture-inference_lib";
-		};
-		61A61F2505F14256B4A51E85 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C7FB545F01A9180A82D20D7C;
-			remoteInfo = "capture-inference_lib";
-		};
-		62013B5F96CF4DDFA8CE238F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6BADB52F5DC0614B384DE362;
-			remoteInfo = ZERO_CHECK;
-		};
-		6AD583B19C834CCA897EBC92 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D4EB3E3A3C0CEBE44EE6FDB;
-			remoteInfo = "capture-inference";
-		};
-		713A7B0A1E4C4237B9C394CF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C7FB545F01A9180A82D20D7C;
-			remoteInfo = "capture-inference_lib";
-		};
-		B47CB3E416014E1B9F7384FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6BADB52F5DC0614B384DE362;
-			remoteInfo = ZERO_CHECK;
-		};
-		DAF01540A2FD4DB8A553BE6D /* PBXContainerItemProxy */ = {
+		2497BE8765EE462A8B219C41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DEA6E34C9A9DD86698FA67A7;
 			remoteInfo = "capture-inference_tests";
 		};
+		34253AD53C4E4440A853734E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BADB52F5DC0614B384DE362;
+			remoteInfo = ZERO_CHECK;
+		};
+		3E6C7967642E42A0B2B3A152 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BADB52F5DC0614B384DE362;
+			remoteInfo = ZERO_CHECK;
+		};
+		3E8E76BAB0EE4829B57B0851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D4EB3E3A3C0CEBE44EE6FDB;
+			remoteInfo = "capture-inference";
+		};
+		64FB5007087D4B5BA8844A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BADB52F5DC0614B384DE362;
+			remoteInfo = ZERO_CHECK;
+		};
+		6C860B906A114F3FBE2266F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7FB545F01A9180A82D20D7C;
+			remoteInfo = "capture-inference_lib";
+		};
+		A5C7BAAC47034192B59BD3C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7FB545F01A9180A82D20D7C;
+			remoteInfo = "capture-inference_lib";
+		};
+		B4E8CAB3407E4C6998AA90BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7FB545F01A9180A82D20D7C;
+			remoteInfo = "capture-inference_lib";
+		};
+		BDDFB7CE4CA745038394B15C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034DD36EA47E4BC2851FDC99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BADB52F5DC0614B384DE362;
+			remoteInfo = ZERO_CHECK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00DFCCCE120C46C88C25A2EA /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/detector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = detector.cpp; path = src/detector.cpp; sourceTree = SOURCE_ROOT; };
-		01A061AFE0BF4D549224696E /* capture-inference_lib */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libcapture-inference_lib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		02A8F63958FE452BAFC51EA4 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		168CA8098A424EEA80F30C72 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/frame_source.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = frame_source.cpp; path = src/frame_source.cpp; sourceTree = SOURCE_ROOT; };
-		3A4E07D345EA45848D6081D6 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/postprocessor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = postprocessor.h; path = include/postprocessor.h; sourceTree = SOURCE_ROOT; };
-		3A74D8CF4EB9445284123661 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_postprocessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_postprocessor.cpp; path = test/test_postprocessor.cpp; sourceTree = SOURCE_ROOT; };
-		4143B08C313E4A7ABEE8A585 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_preprocessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_preprocessor.cpp; path = test/test_preprocessor.cpp; sourceTree = SOURCE_ROOT; };
-		464F58BCCC084037AA211BA6 /* capture-inference */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "capture-inference"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A352442336542A0BCB6ED6D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/frame_source.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = frame_source.h; path = include/frame_source.h; sourceTree = SOURCE_ROOT; };
-		4BF2315B5C7B427FB8616E59 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/postprocessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = postprocessor.cpp; path = src/postprocessor.cpp; sourceTree = SOURCE_ROOT; };
-		4DA9AFE112B04FF887805C49 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_detector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_detector.cpp; path = test/test_detector.cpp; sourceTree = SOURCE_ROOT; };
-		4E6AE48684904BC3AABAD0BC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		4E8363B518334920B1CF21F4 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/coco_classes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = coco_classes.h; path = include/coco_classes.h; sourceTree = SOURCE_ROOT; };
-		5717CF6E34714E23868BD296 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		59DA5ACE493A454D9D421A3B /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/detector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = detector.h; path = include/detector.h; sourceTree = SOURCE_ROOT; };
-		5DDE515875644F1EBA0DFAAC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/pipeline.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pipeline.h; path = include/pipeline.h; sourceTree = SOURCE_ROOT; };
-		611132FB46C645BDB94A2D3F /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		661A1A671AEC48E78E75C471 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/mjpeg_streamer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mjpeg_streamer.h; path = include/mjpeg_streamer.h; sourceTree = SOURCE_ROOT; };
-		91B04BF7A6F84C108D260D70 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/mjpeg_streamer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mjpeg_streamer.cpp; path = src/mjpeg_streamer.cpp; sourceTree = SOURCE_ROOT; };
-		A347F0C197FF4AADAF65BC15 /* capture-inference_tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "capture-inference_tests"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6207893B2074565B49584CF /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/preprocessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = preprocessor.cpp; path = src/preprocessor.cpp; sourceTree = SOURCE_ROOT; };
-		B03EB00DC6CA4087B4A4FBC0 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		B099D11622694E6DB044785F /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline_integration.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_pipeline_integration.cpp; path = test/test_pipeline_integration.cpp; sourceTree = SOURCE_ROOT; };
-		BD0DE9B7AF2C496B98D685E5 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_frame_source.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_frame_source.cpp; path = test/test_frame_source.cpp; sourceTree = SOURCE_ROOT; };
-		CD60E8377455427DAF1328A3 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_pipeline.cpp; path = test/test_pipeline.cpp; sourceTree = SOURCE_ROOT; };
-		D17B20C9365944929F1842D0 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/pipeline.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pipeline.cpp; path = src/pipeline.cpp; sourceTree = SOURCE_ROOT; };
-		DD8549D2EED340F7ADBD2B93 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/preprocessor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = preprocessor.h; path = include/preprocessor.h; sourceTree = SOURCE_ROOT; };
-		F7C61212087F4637AD5323DC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = types.h; path = include/types.h; sourceTree = SOURCE_ROOT; };
+		0998F81C0C04471BAA948844 /* capture-inference_lib */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libcapture-inference_lib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		108208B8B74C4C9EB7116303 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/kafka_publisher.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = kafka_publisher.h; path = include/kafka_publisher.h; sourceTree = SOURCE_ROOT; };
+		1184AAEA02AA4756AE27753C /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		159DB9232CE74FF19D3F35CF /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/frame_source.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = frame_source.cpp; path = src/frame_source.cpp; sourceTree = SOURCE_ROOT; };
+		1BB71E8ED5E2452395209C10 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_preprocessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_preprocessor.cpp; path = test/test_preprocessor.cpp; sourceTree = SOURCE_ROOT; };
+		1F3F794656F740F3B671D6E8 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/coco_classes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = coco_classes.h; path = include/coco_classes.h; sourceTree = SOURCE_ROOT; };
+		275E3DB503844C08A593D7A5 /* capture-inference_tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "capture-inference_tests"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B20C9556FBE41A3B22D2BB3 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/detector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = detector.cpp; path = src/detector.cpp; sourceTree = SOURCE_ROOT; };
+		327BBED6799A4ACC9B8D847C /* capture-inference */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "capture-inference"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB71CDEC5D34EF18E0827BB /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/mjpeg_streamer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mjpeg_streamer.cpp; path = src/mjpeg_streamer.cpp; sourceTree = SOURCE_ROOT; };
+		4D59D82182CF49C4AB62CF12 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/preprocessor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = preprocessor.h; path = include/preprocessor.h; sourceTree = SOURCE_ROOT; };
+		50F40C534AA34FA69D6771E1 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		59C7D90B57B74CD0A88259D0 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_pipeline.cpp; path = test/test_pipeline.cpp; sourceTree = SOURCE_ROOT; };
+		5EF29E1037F94358AAA1EA8E /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/postprocessor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = postprocessor.h; path = include/postprocessor.h; sourceTree = SOURCE_ROOT; };
+		61B6712D1D0840B693B0C400 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_postprocessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_postprocessor.cpp; path = test/test_postprocessor.cpp; sourceTree = SOURCE_ROOT; };
+		8137DCE79A15476CA9E3F2CE /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/pipeline.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pipeline.h; path = include/pipeline.h; sourceTree = SOURCE_ROOT; };
+		935D54F81CC047FFB043E19F /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = types.h; path = include/types.h; sourceTree = SOURCE_ROOT; };
+		98C235E858714A9887D5592C /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/frame_source.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = frame_source.h; path = include/frame_source.h; sourceTree = SOURCE_ROOT; };
+		9E00BA0D42894A1EA4A00D0D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/kafka_publisher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = kafka_publisher.cpp; path = src/kafka_publisher.cpp; sourceTree = SOURCE_ROOT; };
+		AFC8033DC96A449E901F513A /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/postprocessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = postprocessor.cpp; path = src/postprocessor.cpp; sourceTree = SOURCE_ROOT; };
+		B07996D08BBB411285236E6D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_detector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_detector.cpp; path = test/test_detector.cpp; sourceTree = SOURCE_ROOT; };
+		B6B7403E81E94055B8B7AA2C /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BF52BC31042A4B58ABB561D6 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/mjpeg_streamer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mjpeg_streamer.h; path = include/mjpeg_streamer.h; sourceTree = SOURCE_ROOT; };
+		D329D17E8CE6405A8A215AED /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_frame_source.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_frame_source.cpp; path = test/test_frame_source.cpp; sourceTree = SOURCE_ROOT; };
+		D5D607B2DE8B4F41A97B3572 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/detector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = detector.h; path = include/detector.h; sourceTree = SOURCE_ROOT; };
+		E675F6C6C9384F0F82350E6B /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/pipeline.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pipeline.cpp; path = src/pipeline.cpp; sourceTree = SOURCE_ROOT; };
+		F328809D13284D4C8EA1C4D5 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		F487592B33124107B0D74B08 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/preprocessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = preprocessor.cpp; path = src/preprocessor.cpp; sourceTree = SOURCE_ROOT; };
+		FA60BEB0E4AA4A909C2C5F66 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FF880C9073D04B4D86F53331 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline_integration.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_pipeline_integration.cpp; path = test/test_pipeline_integration.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		256391B279B244899E9CC23D /* Frameworks */ = {
+		0FD9AE02482E4FEBA3855490 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25CA2A6305234D6D96F0F4AE /* Frameworks */ = {
+		41A2218C920B4505B535C3F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C506F45E40F4FF397EE64A2 /* Frameworks */ = {
+		BEECB1D415584416A9FF14F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -226,134 +230,136 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		065F4D3DAEF44908A5F1284E /* ALL_BUILD */ = {
+		215F84D862A049389CB3B72F = {
 			isa = PBXGroup;
 			children = (
-				3E5450EBBAE1429CB3071111 /* CMake Rules */,
-				02A8F63958FE452BAFC51EA4 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		1631502C77DB4A79B29FD181 /* capture-inference */ = {
-			isa = PBXGroup;
-			children = (
-				57B0A1494A484A4CBA6F6DE6 /* Source Files */,
-				4E6AE48684904BC3AABAD0BC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */,
-			);
-			name = "capture-inference";
-			sourceTree = "<group>";
-		};
-		27201E475C1B4DD69FC64BF6 /* capture-inference_lib */ = {
-			isa = PBXGroup;
-			children = (
-				D225FAFF33FC4F4A921164A7 /* Header Files */,
-				A3C203177DDC46BEA22D84DD /* Source Files */,
-				5717CF6E34714E23868BD296 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */,
-			);
-			name = "capture-inference_lib";
-			sourceTree = "<group>";
-		};
-		2754C60698C64F7DAEE58689 = {
-			isa = PBXGroup;
-			children = (
-				065F4D3DAEF44908A5F1284E /* ALL_BUILD */,
-				1631502C77DB4A79B29FD181 /* capture-inference */,
-				27201E475C1B4DD69FC64BF6 /* capture-inference_lib */,
-				2B68674C4EE54370A1E3260F /* capture-inference_tests */,
-				4A34B35E68F64799B968067F /* Products */,
-				B2928A86620343649E5DEF85 /* Frameworks */,
-				2AA18EFF1B4D4F5D9C23D508 /* Resources */,
+				E7C9A32D160B444786C4B0A5 /* ALL_BUILD */,
+				457D7D37C4814DD28A3DDDB2 /* capture-inference */,
+				FEE9D3113C66485C844CCCB4 /* capture-inference_lib */,
+				26C4690BD7614BEB923FD543 /* capture-inference_tests */,
+				4AAF20C097F748659C5927D6 /* Products */,
+				7F9FDF04F59749CAA3EE8449 /* Frameworks */,
+				8B35C0473C3E4420BAE0876D /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
-		2AA18EFF1B4D4F5D9C23D508 /* Resources */ = {
+		26C4690BD7614BEB923FD543 /* capture-inference_tests */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		2B68674C4EE54370A1E3260F /* capture-inference_tests */ = {
-			isa = PBXGroup;
-			children = (
-				9F4EEF22C0F54353BAAFFF6E /* Source Files */,
-				B03EB00DC6CA4087B4A4FBC0 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */,
+				B15C405E24944C88BF0CA181 /* Source Files */,
+				B6B7403E81E94055B8B7AA2C /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */,
 			);
 			name = "capture-inference_tests";
 			sourceTree = "<group>";
 		};
-		3E5450EBBAE1429CB3071111 /* CMake Rules */ = {
+		457D7D37C4814DD28A3DDDB2 /* capture-inference */ = {
 			isa = PBXGroup;
 			children = (
+				52D33EDC0A0C49D7919215D8 /* Source Files */,
+				FA60BEB0E4AA4A909C2C5F66 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */,
 			);
-			name = "CMake Rules";
+			name = "capture-inference";
 			sourceTree = "<group>";
 		};
-		4A34B35E68F64799B968067F /* Products */ = {
+		4AAF20C097F748659C5927D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				464F58BCCC084037AA211BA6 /* capture-inference */,
-				01A061AFE0BF4D549224696E /* capture-inference_lib */,
-				A347F0C197FF4AADAF65BC15 /* capture-inference_tests */,
+				327BBED6799A4ACC9B8D847C /* capture-inference */,
+				0998F81C0C04471BAA948844 /* capture-inference_lib */,
+				275E3DB503844C08A593D7A5 /* capture-inference_tests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		57B0A1494A484A4CBA6F6DE6 /* Source Files */ = {
+		52D33EDC0A0C49D7919215D8 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				611132FB46C645BDB94A2D3F /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/main.cpp */,
+				F328809D13284D4C8EA1C4D5 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/main.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		9F4EEF22C0F54353BAAFFF6E /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				4DA9AFE112B04FF887805C49 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_detector.cpp */,
-				BD0DE9B7AF2C496B98D685E5 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_frame_source.cpp */,
-				CD60E8377455427DAF1328A3 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline.cpp */,
-				B099D11622694E6DB044785F /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline_integration.cpp */,
-				3A74D8CF4EB9445284123661 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_postprocessor.cpp */,
-				4143B08C313E4A7ABEE8A585 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_preprocessor.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		A3C203177DDC46BEA22D84DD /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				00DFCCCE120C46C88C25A2EA /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/detector.cpp */,
-				168CA8098A424EEA80F30C72 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/frame_source.cpp */,
-				91B04BF7A6F84C108D260D70 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/mjpeg_streamer.cpp */,
-				D17B20C9365944929F1842D0 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/pipeline.cpp */,
-				4BF2315B5C7B427FB8616E59 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/postprocessor.cpp */,
-				A6207893B2074565B49584CF /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/preprocessor.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		B2928A86620343649E5DEF85 /* Frameworks */ = {
+		7F9FDF04F59749CAA3EE8449 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D225FAFF33FC4F4A921164A7 /* Header Files */ = {
+		8B35C0473C3E4420BAE0876D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4E8363B518334920B1CF21F4 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/coco_classes.h */,
-				59DA5ACE493A454D9D421A3B /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/detector.h */,
-				4A352442336542A0BCB6ED6D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/frame_source.h */,
-				661A1A671AEC48E78E75C471 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/mjpeg_streamer.h */,
-				5DDE515875644F1EBA0DFAAC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/pipeline.h */,
-				3A4E07D345EA45848D6081D6 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/postprocessor.h */,
-				DD8549D2EED340F7ADBD2B93 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/preprocessor.h */,
-				F7C61212087F4637AD5323DC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/types.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		970F310E81E24AD6A9F19C71 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B20C9556FBE41A3B22D2BB3 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/detector.cpp */,
+				159DB9232CE74FF19D3F35CF /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/frame_source.cpp */,
+				9E00BA0D42894A1EA4A00D0D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/kafka_publisher.cpp */,
+				4CB71CDEC5D34EF18E0827BB /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/mjpeg_streamer.cpp */,
+				E675F6C6C9384F0F82350E6B /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/pipeline.cpp */,
+				AFC8033DC96A449E901F513A /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/postprocessor.cpp */,
+				F487592B33124107B0D74B08 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/preprocessor.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B15C405E24944C88BF0CA181 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B07996D08BBB411285236E6D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_detector.cpp */,
+				D329D17E8CE6405A8A215AED /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_frame_source.cpp */,
+				59C7D90B57B74CD0A88259D0 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline.cpp */,
+				FF880C9073D04B4D86F53331 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline_integration.cpp */,
+				61B6712D1D0840B693B0C400 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_postprocessor.cpp */,
+				1BB71E8ED5E2452395209C10 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_preprocessor.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B7E572C23EDA4B4FBF793AB9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C797469E4B63485FBF98F7D9 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F3F794656F740F3B671D6E8 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/coco_classes.h */,
+				D5D607B2DE8B4F41A97B3572 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/detector.h */,
+				98C235E858714A9887D5592C /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/frame_source.h */,
+				108208B8B74C4C9EB7116303 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/kafka_publisher.h */,
+				BF52BC31042A4B58ABB561D6 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/mjpeg_streamer.h */,
+				8137DCE79A15476CA9E3F2CE /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/pipeline.h */,
+				5EF29E1037F94358AAA1EA8E /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/postprocessor.h */,
+				4D59D82182CF49C4AB62CF12 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/preprocessor.h */,
+				935D54F81CC047FFB043E19F /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include/types.h */,
 			);
 			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		E7C9A32D160B444786C4B0A5 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				B7E572C23EDA4B4FBF793AB9 /* CMake Rules */,
+				1184AAEA02AA4756AE27753C /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		FEE9D3113C66485C844CCCB4 /* capture-inference_lib */ = {
+			isa = PBXGroup;
+			children = (
+				C797469E4B63485FBF98F7D9 /* Header Files */,
+				970F310E81E24AD6A9F19C71 /* Source Files */,
+				50F40C534AA34FA69D6771E1 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/CMakeLists.txt */,
+			);
+			name = "capture-inference_lib";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,55 +367,55 @@
 /* Begin PBXNativeTarget section */
 		3D4EB3E3A3C0CEBE44EE6FDB /* capture-inference */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5F9062340D04440B50238E1 /* Build configuration list for PBXNativeTarget "capture-inference" */;
+			buildConfigurationList = E31FA83C50044B80B471FF50 /* Build configuration list for PBXNativeTarget "capture-inference" */;
 			buildPhases = (
-				2AE2BAC55C2B459CA1E24FCB /* Sources */,
-				256391B279B244899E9CC23D /* Frameworks */,
+				8056B2D2B27C4EAF991AD1C5 /* Sources */,
+				BEECB1D415584416A9FF14F3 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B2768F1AB1BD45A9AC994D1B /* PBXTargetDependency */,
-				1E080EDBC0724BD4A18FEDBA /* PBXTargetDependency */,
+				24D2B7224FD245FCA7307EA1 /* PBXTargetDependency */,
+				5DCEBC60AA5B4CE6B9652524 /* PBXTargetDependency */,
 			);
 			name = "capture-inference";
 			productName = "capture-inference";
-			productReference = 464F58BCCC084037AA211BA6 /* capture-inference */;
+			productReference = 327BBED6799A4ACC9B8D847C /* capture-inference */;
 			productType = "com.apple.product-type.tool";
 		};
 		C7FB545F01A9180A82D20D7C /* capture-inference_lib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7F1A22700AD45E88DF5A113 /* Build configuration list for PBXNativeTarget "capture-inference_lib" */;
+			buildConfigurationList = 815682657239409D86F23EB6 /* Build configuration list for PBXNativeTarget "capture-inference_lib" */;
 			buildPhases = (
-				EBC750173F1140EFBEA2E50F /* Sources */,
-				4C506F45E40F4FF397EE64A2 /* Frameworks */,
+				F075FFC9CE884EA79D4FBAB7 /* Sources */,
+				0FD9AE02482E4FEBA3855490 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B4711C1B7CFD476CB24B589D /* PBXTargetDependency */,
+				5ACBE77F7CD144FF81EEC531 /* PBXTargetDependency */,
 			);
 			name = "capture-inference_lib";
 			productName = "capture-inference_lib";
-			productReference = 01A061AFE0BF4D549224696E /* capture-inference_lib */;
+			productReference = 0998F81C0C04471BAA948844 /* capture-inference_lib */;
 			productType = "com.apple.product-type.library.static";
 		};
 		DEA6E34C9A9DD86698FA67A7 /* capture-inference_tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7E057390FF246D38DF3E919 /* Build configuration list for PBXNativeTarget "capture-inference_tests" */;
+			buildConfigurationList = C21E0C84B80B4AD59F6FF4E8 /* Build configuration list for PBXNativeTarget "capture-inference_tests" */;
 			buildPhases = (
-				608C1CEFFD5D4345A1645149 /* Sources */,
-				25CA2A6305234D6D96F0F4AE /* Frameworks */,
+				48AFA46A5E064F6DBF800D91 /* Sources */,
+				41A2218C920B4505B535C3F5 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9631FF6BDC7246E484C72809 /* PBXTargetDependency */,
-				A130CB99AAB84E3CBDEB9382 /* PBXTargetDependency */,
+				49031A3B133F490EAF5F33FF /* PBXTargetDependency */,
+				ED09E119B6964178B0FFAF29 /* PBXTargetDependency */,
 			);
 			name = "capture-inference_tests";
 			productName = "capture-inference_tests";
-			productReference = A347F0C197FF4AADAF65BC15 /* capture-inference_tests */;
+			productReference = 275E3DB503844C08A593D7A5 /* capture-inference_tests */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -421,18 +427,18 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 2660;
 			};
-			buildConfigurationList = B6E6AEBE4A374F9CAC20BBDD /* Build configuration list for PBXProject "capture-inference" */;
+			buildConfigurationList = D4FF626264284FE8B0A9E087 /* Build configuration list for PBXProject "capture-inference" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				8ABFDEB638944814A736F20A /* Debug */,
-				A2A979FBC15E4E4289410451 /* Release */,
-				9688B67198E64EB38E97A588 /* MinSizeRel */,
-				0A44FDE6782F4A1C93475DE1 /* RelWithDebInfo */,
+				6812A64BC2D6400F9C6436C3 /* Debug */,
+				FF5890B9F140469182BE3AA4 /* Release */,
+				035DD20EAFE845F1BB456CAC /* MinSizeRel */,
+				631C1E26E130417BB2E014CB /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 2754C60698C64F7DAEE58689;
+			mainGroup = 215F84D862A049389CB3B72F;
 			projectDirPath = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference";
 			projectRoot = "";
 			targets = (
@@ -594,270 +600,93 @@ fi
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2AE2BAC55C2B459CA1E24FCB /* Sources */ = {
+		48AFA46A5E064F6DBF800D91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C8E5953E044B9D8ED6B1D1 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/main.cpp */,
+				6E053ED9D8A3435EA9A7B378 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_detector.cpp */,
+				ED1CE6EF25764811B4599A05 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_frame_source.cpp */,
+				C1ACB288F1334DD08F822FC6 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline.cpp */,
+				7C23799782854DAEBF3EA78E /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline_integration.cpp */,
+				9D280C8D025B4CCD8AEAD905 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_postprocessor.cpp */,
+				73171DE01C634A0DBF2EF8AC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_preprocessor.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		608C1CEFFD5D4345A1645149 /* Sources */ = {
+		8056B2D2B27C4EAF991AD1C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82690B1610FA4AAE905530FC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_detector.cpp */,
-				3E53007E82834C2EB0742290 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_frame_source.cpp */,
-				4DA79F171A23466DBB5779B6 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline.cpp */,
-				E532FB7AC9AD434EB2C8982C /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_pipeline_integration.cpp */,
-				2DC6A48551AB438DBA31668D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_postprocessor.cpp */,
-				89C2AF7C1CBC43958EA663FD /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/test_preprocessor.cpp */,
+				24491C20AD4B4D4283484032 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/main.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBC750173F1140EFBEA2E50F /* Sources */ = {
+		F075FFC9CE884EA79D4FBAB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7B59403CD254893ACC7793C /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/detector.cpp */,
-				16217E66C87F4069A20DE8BF /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/frame_source.cpp */,
-				6637CBCC9D8546FCB1F2C980 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/mjpeg_streamer.cpp */,
-				F2AFF96CB6414E2BAFD1D900 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/pipeline.cpp */,
-				69B7165B93A84FF49BD02F3D /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/postprocessor.cpp */,
-				1916E69189CA47AD95ED396F /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/preprocessor.cpp */,
+				03407E67FAF04915B5488869 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/detector.cpp */,
+				004FE0BBB4E24BBA87787985 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/frame_source.cpp */,
+				C3EA0E94825B4CA783A67EDE /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/kafka_publisher.cpp */,
+				D379F26B2AAE435B8EC9C6D8 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/mjpeg_streamer.cpp */,
+				6DD70171C50340E69D0951C4 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/pipeline.cpp */,
+				9EA2AD7660AA430EB6F0B4C0 /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/postprocessor.cpp */,
+				DD1B76E99E3B4BEBB69015EC /* /Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/src/preprocessor.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		06D17F82AAF24CB4AB871F84 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DEA6E34C9A9DD86698FA67A7 /* capture-inference_tests */;
-			targetProxy = DAF01540A2FD4DB8A553BE6D /* PBXContainerItemProxy */;
-		};
-		1E080EDBC0724BD4A18FEDBA /* PBXTargetDependency */ = {
+		24D2B7224FD245FCA7307EA1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C7FB545F01A9180A82D20D7C /* capture-inference_lib */;
-			targetProxy = 713A7B0A1E4C4237B9C394CF /* PBXContainerItemProxy */;
+			targetProxy = A5C7BAAC47034192B59BD3C4 /* PBXContainerItemProxy */;
 		};
-		3B65297EA92A45E8B8B9630F /* PBXTargetDependency */ = {
+		49031A3B133F490EAF5F33FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7FB545F01A9180A82D20D7C /* capture-inference_lib */;
+			targetProxy = 6C860B906A114F3FBE2266F9 /* PBXContainerItemProxy */;
+		};
+		5ACBE77F7CD144FF81EEC531 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6BADB52F5DC0614B384DE362 /* ZERO_CHECK */;
-			targetProxy = 62013B5F96CF4DDFA8CE238F /* PBXContainerItemProxy */;
+			targetProxy = BDDFB7CE4CA745038394B15C /* PBXContainerItemProxy */;
 		};
-		58296C97836E4CDA8A318B8B /* PBXTargetDependency */ = {
+		5DCEBC60AA5B4CE6B9652524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BADB52F5DC0614B384DE362 /* ZERO_CHECK */;
+			targetProxy = 3E6C7967642E42A0B2B3A152 /* PBXContainerItemProxy */;
+		};
+		B7534E1DD78140B6AAF3CCA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7FB545F01A9180A82D20D7C /* capture-inference_lib */;
+			targetProxy = B4E8CAB3407E4C6998AA90BA /* PBXContainerItemProxy */;
+		};
+		E16CEF6D5FFD457FB3FC124F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3D4EB3E3A3C0CEBE44EE6FDB /* capture-inference */;
-			targetProxy = 6AD583B19C834CCA897EBC92 /* PBXContainerItemProxy */;
+			targetProxy = 3E8E76BAB0EE4829B57B0851 /* PBXContainerItemProxy */;
 		};
-		9631FF6BDC7246E484C72809 /* PBXTargetDependency */ = {
+		E6AD63E7AF8D4BE8A212CB22 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6BADB52F5DC0614B384DE362 /* ZERO_CHECK */;
-			targetProxy = 03129BA6EB834DB28016A1AA /* PBXContainerItemProxy */;
+			targetProxy = 64FB5007087D4B5BA8844A66 /* PBXContainerItemProxy */;
 		};
-		A130CB99AAB84E3CBDEB9382 /* PBXTargetDependency */ = {
+		EACAF1E1F20D44F180A5B2C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C7FB545F01A9180A82D20D7C /* capture-inference_lib */;
-			targetProxy = 555A03BA0517456EA12C91A8 /* PBXContainerItemProxy */;
+			target = DEA6E34C9A9DD86698FA67A7 /* capture-inference_tests */;
+			targetProxy = 2497BE8765EE462A8B219C41 /* PBXContainerItemProxy */;
 		};
-		B2768F1AB1BD45A9AC994D1B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6BADB52F5DC0614B384DE362 /* ZERO_CHECK */;
-			targetProxy = 33FB76BDFC724D31AAE96A14 /* PBXContainerItemProxy */;
-		};
-		B4711C1B7CFD476CB24B589D /* PBXTargetDependency */ = {
+		ED09E119B6964178B0FFAF29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6BADB52F5DC0614B384DE362 /* ZERO_CHECK */;
-			targetProxy = B47CB3E416014E1B9F7384FF /* PBXContainerItemProxy */;
-		};
-		B85C051C99034AABA4DC91C0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C7FB545F01A9180A82D20D7C /* capture-inference_lib */;
-			targetProxy = 61A61F2505F14256B4A51E85 /* PBXContainerItemProxy */;
+			targetProxy = 34253AD53C4E4440A853734E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0172625E5D744B92AFC7CD68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/Release";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'TEST_FIXTURES_DIR=\"/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/fixtures\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/Release/libcapture-inference_lib.a",/opt/homebrew/lib/libgtest.a,/opt/homebrew/lib/libgtest_main.a,/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,/opt/homebrew/lib/libgtest.a,"$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "capture-inference_tests";
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,/opt/homebrew/include,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		03877BDB06C34FE6B1820B80 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/RelWithDebInfo";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'TEST_FIXTURES_DIR=\"/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/fixtures\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/RelWithDebInfo/libcapture-inference_lib.a",/opt/homebrew/lib/libgtest.a,/opt/homebrew/lib/libgtest_main.a,/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,/opt/homebrew/lib/libgtest.a,"$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "capture-inference_tests";
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,/opt/homebrew/include,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		076080FC538A40E0BBE3BE7C /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = RUN_TESTS;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		09DB99FEFA1149D0A8185909 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		30B1B7E608DA42BFB9A73C02 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/Debug";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/Debug/libcapture-inference_lib.a",/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,"$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "capture-inference";
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		3A7238BEBE19491DA911EE06 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = RUN_TESTS;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		3BBD2B680CBB49A2AC3C9F16 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = RUN_TESTS;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		4EEC31A55BBC4180A2E0EDA1 /* RelWithDebInfo */ = {
+		1449108984AC407E80E1A727 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -879,7 +708,157 @@ fi
 			};
 			name = RelWithDebInfo;
 		};
-		523136DCF174424FA19401C2 /* Release */ = {
+		1A7321CD20AD4CD697B647D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'TEST_FIXTURES_DIR=\"/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/fixtures\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/Debug/libcapture-inference_lib.a",/opt/homebrew/lib/libgtest.a,/opt/homebrew/lib/libgtest_main.a,/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,"/opt/homebrew/lib/librdkafka++.dylib",/opt/homebrew/lib/libgtest.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "capture-inference_tests";
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include,/opt/homebrew/include/onnxruntime,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		1D7F468004F246CFBDA6A886 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'TEST_FIXTURES_DIR=\"/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/fixtures\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/MinSizeRel/libcapture-inference_lib.a",/opt/homebrew/lib/libgtest.a,/opt/homebrew/lib/libgtest_main.a,/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,"/opt/homebrew/lib/librdkafka++.dylib",/opt/homebrew/lib/libgtest.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "capture-inference_tests";
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include,/opt/homebrew/include/onnxruntime,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		32C2C6AA68BC453E9D08BF0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'TEST_FIXTURES_DIR=\"/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/fixtures\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/Release/libcapture-inference_lib.a",/opt/homebrew/lib/libgtest.a,/opt/homebrew/lib/libgtest_main.a,/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,"/opt/homebrew/lib/librdkafka++.dylib",/opt/homebrew/lib/libgtest.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "capture-inference_tests";
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include,/opt/homebrew/include/onnxruntime,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		379B03EA1E9C41E0A8280F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party",/opt/homebrew/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/Debug/libcapture-inference_lib.a",/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,"/opt/homebrew/lib/librdkafka++.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "capture-inference";
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		387D728B9F364DE59DCB23AA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party",/opt/homebrew/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/RelWithDebInfo/libcapture-inference_lib.a",/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,"/opt/homebrew/lib/librdkafka++.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "capture-inference";
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3D00F996896B436D9558A330 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -899,9 +878,41 @@ fi
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Release;
+			name = MinSizeRel;
 		};
-		6B41536E174545788A3EE1D6 /* Release */ = {
+		3F31E487B468423CAD52F4B0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		564D5CF4E2FA4ECA89F94B21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		595800A3C9DE4566B07692A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -915,7 +926,7 @@ fi
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
+				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party",/opt/homebrew/include,"$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				ONLY_ACTIVE_ARCH = NO;
@@ -931,60 +942,7 @@ fi
 			};
 			name = Release;
 		};
-		7B615E494FA643FB9DAEB002 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = "";
-				SYMROOT = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build";
-			};
-			name = Debug;
-		};
-		8214B2BC0AF644FCA6662D46 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		8757088BD5754442A32E8FEF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		8A537A3947F744469C4AA34C /* RelWithDebInfo */ = {
+		5DAE6A2F863D4DF9B5537356 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = arm64;
@@ -992,231 +950,36 @@ fi
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build";
 			};
-			name = RelWithDebInfo;
-		};
-		94995483676A4AB6A69997FB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/Release";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/Release/libcapture-inference_lib.a",/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,"$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "capture-inference";
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		9B28DB43F9474CB4BDD8547C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/Debug";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "capture-inference_lib";
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference_lib.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		A031357B9A3C49C1919E9112 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/Debug";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'TEST_FIXTURES_DIR=\"/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/fixtures\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/Debug/libcapture-inference_lib.a",/opt/homebrew/lib/libgtest.a,/opt/homebrew/lib/libgtest_main.a,/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,/opt/homebrew/lib/libgtest.a,"$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "capture-inference_tests";
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,/opt/homebrew/include,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		A64F428D0C4A4F7F98DC4A0F /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
 			name = MinSizeRel;
 		};
-		AF93EEA5011E414AA68B3D55 /* Release */ = {
+		65E3310F57424BF39A56E645 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				SDKROOT = "";
+				SYMROOT = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build";
 			};
-			name = Release;
+			name = Debug;
 		};
-		BDC2C317FDD8431D912032F8 /* RelWithDebInfo */ = {
+		677D6D7DA8A04436BA44860D /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/RelWithDebInfo";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/RelWithDebInfo/libcapture-inference_lib.a",/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,"$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "capture-inference";
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		BEBCE979A23547458AF501F5 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/MinSizeRel";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
+				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/MinSizeRel/libcapture-inference_lib.a",/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,"$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "capture-inference";
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		C501C17C034248508555F2A4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = "";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build";
-			};
-			name = Release;
-		};
-		C6B799BE9C9C43979DA9B5E9 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/RelWithDebInfo";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
+				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party",/opt/homebrew/include,"$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
 				OTHER_LIBTOOLFLAGS = ("");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = "capture-inference_lib";
@@ -1226,9 +989,75 @@ fi
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = RelWithDebInfo;
+			name = MinSizeRel;
 		};
-		D47C233CDF7F493D809D4912 /* RelWithDebInfo */ = {
+		7CAA4F2773654864916BA532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		86473EA75EC3466A958FE8C4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		89E9AD4C84DE43AEB45F41DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9D68400F57E9424C9AFEE98D /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1250,25 +1079,35 @@ fi
 			};
 			name = RelWithDebInfo;
 		};
-		DCB716F050564040B445EB56 /* MinSizeRel */ = {
+		A838DB6664A1493A8989B8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build";
+			};
+			name = Release;
+		};
+		ABBBCBBA42814EC1A4A7DE8D /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/MinSizeRel";
+				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/RelWithDebInfo";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
+				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party",/opt/homebrew/include,"$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
 				OTHER_LIBTOOLFLAGS = ("");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = "capture-inference_lib";
@@ -1278,9 +1117,217 @@ fi
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
+			name = RelWithDebInfo;
+		};
+		AE9E61EC83E84B04A28005B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B02649DEB7ED4CB8B5EE2356 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C2E321AA5FC04221AE7E23F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		DD486B9BC09843D188C85DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party",/opt/homebrew/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "capture-inference_lib";
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference_lib.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E5FAED9B23F54AA685893E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party",/opt/homebrew/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/Release/libcapture-inference_lib.a",/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,"/opt/homebrew/lib/librdkafka++.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "capture-inference";
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F418DD3EA7FD4F3096D221FB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party",/opt/homebrew/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/MinSizeRel/libcapture-inference_lib.a",/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,"/opt/homebrew/lib/librdkafka++.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "capture-inference";
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
 			name = MinSizeRel;
 		};
-		EBA3A957418547618CCDBBFD /* Debug */ = {
+		F62B9198877D4F9293FB78CB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FACC2E6811D840389EF8344A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'TEST_FIXTURES_DIR=\"/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/fixtures\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/RelWithDebInfo/libcapture-inference_lib.a",/opt/homebrew/lib/libgtest.a,/opt/homebrew/lib/libgtest_main.a,/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,"/opt/homebrew/lib/librdkafka++.dylib",/opt/homebrew/lib/libgtest.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "capture-inference_tests";
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include,/opt/homebrew/include/onnxruntime,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FD4C4864A68B42B3B6C37887 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1302,122 +1349,82 @@ fi
 			};
 			name = Debug;
 		};
-		F19338C8C61641B18866D2F2 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/bin/MinSizeRel";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'TEST_FIXTURES_DIR=\"/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/test/fixtures\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/include","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/third_party","$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/lib/MinSizeRel/libcapture-inference_lib.a",/opt/homebrew/lib/libgtest.a,/opt/homebrew/lib/libgtest_main.a,/opt/homebrew/lib/libopencv_gapi.4.13.0.dylib,/opt/homebrew/lib/libopencv_stitching.4.13.0.dylib,/opt/homebrew/lib/libopencv_alphamat.4.13.0.dylib,/opt/homebrew/lib/libopencv_aruco.4.13.0.dylib,/opt/homebrew/lib/libopencv_bgsegm.4.13.0.dylib,/opt/homebrew/lib/libopencv_bioinspired.4.13.0.dylib,/opt/homebrew/lib/libopencv_ccalib.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_dpm.4.13.0.dylib,/opt/homebrew/lib/libopencv_face.4.13.0.dylib,/opt/homebrew/lib/libopencv_freetype.4.13.0.dylib,/opt/homebrew/lib/libopencv_fuzzy.4.13.0.dylib,/opt/homebrew/lib/libopencv_hfs.4.13.0.dylib,/opt/homebrew/lib/libopencv_img_hash.4.13.0.dylib,/opt/homebrew/lib/libopencv_intensity_transform.4.13.0.dylib,/opt/homebrew/lib/libopencv_line_descriptor.4.13.0.dylib,/opt/homebrew/lib/libopencv_mcc.4.13.0.dylib,/opt/homebrew/lib/libopencv_quality.4.13.0.dylib,/opt/homebrew/lib/libopencv_rapid.4.13.0.dylib,/opt/homebrew/lib/libopencv_reg.4.13.0.dylib,/opt/homebrew/lib/libopencv_rgbd.4.13.0.dylib,/opt/homebrew/lib/libopencv_saliency.4.13.0.dylib,/opt/homebrew/lib/libopencv_sfm.4.13.0.dylib,/opt/homebrew/lib/libopencv_signal.4.13.0.dylib,/opt/homebrew/lib/libopencv_stereo.4.13.0.dylib,/opt/homebrew/lib/libopencv_structured_light.4.13.0.dylib,/opt/homebrew/lib/libopencv_phase_unwrapping.4.13.0.dylib,/opt/homebrew/lib/libopencv_superres.4.13.0.dylib,/opt/homebrew/lib/libopencv_optflow.4.13.0.dylib,/opt/homebrew/lib/libopencv_surface_matching.4.13.0.dylib,/opt/homebrew/lib/libopencv_tracking.4.13.0.dylib,/opt/homebrew/lib/libopencv_highgui.4.13.0.dylib,/opt/homebrew/lib/libopencv_datasets.4.13.0.dylib,/opt/homebrew/lib/libopencv_plot.4.13.0.dylib,/opt/homebrew/lib/libopencv_text.4.13.0.dylib,/opt/homebrew/lib/libopencv_videostab.4.13.0.dylib,/opt/homebrew/lib/libopencv_videoio.4.13.0.dylib,/opt/homebrew/lib/libopencv_viz.4.13.0.dylib,/opt/homebrew/lib/libopencv_wechat_qrcode.4.13.0.dylib,/opt/homebrew/lib/libopencv_xfeatures2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_ml.4.13.0.dylib,/opt/homebrew/lib/libopencv_shape.4.13.0.dylib,/opt/homebrew/lib/libopencv_ximgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_video.4.13.0.dylib,/opt/homebrew/lib/libopencv_xobjdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgcodecs.4.13.0.dylib,/opt/homebrew/lib/libopencv_objdetect.4.13.0.dylib,/opt/homebrew/lib/libopencv_calib3d.4.13.0.dylib,/opt/homebrew/lib/libopencv_dnn.4.13.0.dylib,/opt/homebrew/lib/libopencv_features2d.4.13.0.dylib,/opt/homebrew/lib/libopencv_flann.4.13.0.dylib,/opt/homebrew/lib/libopencv_xphoto.4.13.0.dylib,/opt/homebrew/lib/libopencv_photo.4.13.0.dylib,/opt/homebrew/lib/libopencv_imgproc.4.13.0.dylib,/opt/homebrew/lib/libopencv_core.4.13.0.dylib,/opt/homebrew/lib/libonnxruntime.1.27.0.dylib,/opt/homebrew/lib/libgtest.a,"$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "capture-inference_tests";
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/Cellar/opencv/4.13.0_15/include/opencv4,/opt/homebrew/include/onnxruntime,/opt/homebrew/include,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build/capture-inference_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		FC44281BEB28453BB5C11513 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = "";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = "/Users/Dylan/Documents/realtime-detection-pipeline/services/capture-inference/build/build";
-			};
-			name = MinSizeRel;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C8375AE64174D1187A1E9B3 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		779F2073532C40409C0324E7 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EBA3A957418547618CCDBBFD /* Debug */,
-				AF93EEA5011E414AA68B3D55 /* Release */,
-				8214B2BC0AF644FCA6662D46 /* MinSizeRel */,
-				4EEC31A55BBC4180A2E0EDA1 /* RelWithDebInfo */,
+				564D5CF4E2FA4ECA89F94B21 /* Debug */,
+				AE9E61EC83E84B04A28005B3 /* Release */,
+				F62B9198877D4F9293FB78CB /* MinSizeRel */,
+				9D68400F57E9424C9AFEE98D /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		604AA26BACCE41E3A3B9F64B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		815682657239409D86F23EB6 /* Build configuration list for PBXNativeTarget "capture-inference_lib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8757088BD5754442A32E8FEF /* Debug */,
-				523136DCF174424FA19401C2 /* Release */,
-				A64F428D0C4A4F7F98DC4A0F /* MinSizeRel */,
-				09DB99FEFA1149D0A8185909 /* RelWithDebInfo */,
+				DD486B9BC09843D188C85DB1 /* Debug */,
+				595800A3C9DE4566B07692A5 /* Release */,
+				677D6D7DA8A04436BA44860D /* MinSizeRel */,
+				ABBBCBBA42814EC1A4A7DE8D /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		A7E057390FF246D38DF3E919 /* Build configuration list for PBXNativeTarget "capture-inference_tests" */ = {
+		B0739EC9A5334A64998F8841 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A031357B9A3C49C1919E9112 /* Debug */,
-				0172625E5D744B92AFC7CD68 /* Release */,
-				F19338C8C61641B18866D2F2 /* MinSizeRel */,
-				03877BDB06C34FE6B1820B80 /* RelWithDebInfo */,
+				89E9AD4C84DE43AEB45F41DA /* Debug */,
+				7CAA4F2773654864916BA532 /* Release */,
+				3D00F996896B436D9558A330 /* MinSizeRel */,
+				B02649DEB7ED4CB8B5EE2356 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B5F9062340D04440B50238E1 /* Build configuration list for PBXNativeTarget "capture-inference" */ = {
+		C21E0C84B80B4AD59F6FF4E8 /* Build configuration list for PBXNativeTarget "capture-inference_tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30B1B7E608DA42BFB9A73C02 /* Debug */,
-				94995483676A4AB6A69997FB /* Release */,
-				BEBCE979A23547458AF501F5 /* MinSizeRel */,
-				BDC2C317FDD8431D912032F8 /* RelWithDebInfo */,
+				1A7321CD20AD4CD697B647D2 /* Debug */,
+				32C2C6AA68BC453E9D08BF0C /* Release */,
+				1D7F468004F246CFBDA6A886 /* MinSizeRel */,
+				FACC2E6811D840389EF8344A /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B6E6AEBE4A374F9CAC20BBDD /* Build configuration list for PBXProject "capture-inference" */ = {
+		D4FF626264284FE8B0A9E087 /* Build configuration list for PBXProject "capture-inference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B615E494FA643FB9DAEB002 /* Debug */,
-				C501C17C034248508555F2A4 /* Release */,
-				FC44281BEB28453BB5C11513 /* MinSizeRel */,
-				8A537A3947F744469C4AA34C /* RelWithDebInfo */,
+				65E3310F57424BF39A56E645 /* Debug */,
+				A838DB6664A1493A8989B8C0 /* Release */,
+				5DAE6A2F863D4DF9B5537356 /* MinSizeRel */,
+				3F31E487B468423CAD52F4B0 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B7F1A22700AD45E88DF5A113 /* Build configuration list for PBXNativeTarget "capture-inference_lib" */ = {
+		E31FA83C50044B80B471FF50 /* Build configuration list for PBXNativeTarget "capture-inference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B28DB43F9474CB4BDD8547C /* Debug */,
-				6B41536E174545788A3EE1D6 /* Release */,
-				DCB716F050564040B445EB56 /* MinSizeRel */,
-				C6B799BE9C9C43979DA9B5E9 /* RelWithDebInfo */,
+				379B03EA1E9C41E0A8280F45 /* Debug */,
+				E5FAED9B23F54AA685893E86 /* Release */,
+				F418DD3EA7FD4F3096D221FB /* MinSizeRel */,
+				387D728B9F364DE59DCB23AA /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		EFF4459FFBA741FC8060D890 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+		F612A00C56C9404FB8BC8E23 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A7238BEBE19491DA911EE06 /* Debug */,
-				3BBD2B680CBB49A2AC3C9F16 /* Release */,
-				076080FC538A40E0BBE3BE7C /* MinSizeRel */,
-				D47C233CDF7F493D809D4912 /* RelWithDebInfo */,
+				FD4C4864A68B42B3B6C37887 /* Debug */,
+				C2E321AA5FC04221AE7E23F7 /* Release */,
+				86473EA75EC3466A958FE8C4 /* MinSizeRel */,
+				1449108984AC407E80E1A727 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

@@ -16,6 +16,8 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 # Dependencies
 find_package(OpenCV REQUIRED)
 find_package(onnxruntime QUIET)
+find_library(RDKAFKA_LIB rdkafka++)
+find_path(RDKAFKA_INCLUDE_DIR librdkafka/rdkafkacpp.h)
 
 # If onnxruntime not found via CMake config, try pkg-config
 if(NOT onnxruntime_FOUND)
@@ -40,18 +42,21 @@ if(LIB_SOURCES)
         ${CMAKE_SOURCE_DIR}/include
         ${CMAKE_SOURCE_DIR}/third_party
         ${OpenCV_INCLUDE_DIRS}
+        ${RDKAFKA_INCLUDE_DIR}
     )
 
     if(onnxruntime_FOUND)
         target_link_libraries(${PROJECT_NAME}_lib PUBLIC
             ${OpenCV_LIBS}
             onnxruntime::onnxruntime
+            ${RDKAFKA_LIB}
         )
     else()
         target_include_directories(${PROJECT_NAME}_lib PUBLIC ${ONNXRUNTIME_INCLUDE_DIR})
         target_link_libraries(${PROJECT_NAME}_lib PUBLIC
             ${OpenCV_LIBS}
             ${ONNXRUNTIME_LIB}
+            ${RDKAFKA_LIB}
         )
     endif()
 endif()
