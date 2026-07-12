@@ -23,8 +23,8 @@ void RedisWriter::write_recent_events(const std::vector<DetectionEvent>& events)
     // TODO: DEL + RPUSH detections:recent with JSON-serialized events
 }
 
-void RedisWriter::write_timeline(const std::unordered_map<std::string, std::vector<int>>& timeline) {
-    // TODO: HSET detections:timeline for each class -> JSON array
+void RedisWriter::write_timeline(const std::unordered_map<std::string, std::deque<std::pair<int64_t, int>>>& timeline) {
+    // TODO: HSET detections:timeline for each class -> JSON array of (bucket, count) pairs
 }
 
 bool RedisWriter::is_connected() const {

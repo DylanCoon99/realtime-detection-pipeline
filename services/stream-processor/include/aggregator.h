@@ -14,7 +14,7 @@
 
 class Aggregator {
 public:
-    Aggregator(size_t max_recent_events = 100);
+    Aggregator(size_t max_recent_events = 100, int64_t window_minutes = 60);
 
     // Deserialize a JSON message and update aggregated state
     void process(const std::string& message);
@@ -36,4 +36,5 @@ private:
 
     AggregatedState state_;
     size_t max_recent_events_;
+    int64_t window_minutes_;
 };

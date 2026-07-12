@@ -2,8 +2,10 @@
 
 #include <string>
 #include <vector>
+#include <deque>
 #include <cstdint>
 #include <unordered_map>
+#include <utility>
 
 struct BoundingBox {
     int x;
@@ -28,5 +30,5 @@ struct DetectionEvent {
 struct AggregatedState {
     std::unordered_map<std::string, int> class_counts;         // total detections per class
     std::vector<DetectionEvent> recent_events;                  // last N events for the feed
-    std::unordered_map<std::string, std::vector<int>> timeline; // detections per minute per class
+    std::unordered_map<std::string, std::deque<std::pair<int64_t, int>>> timeline; // class -> deque of (minute_bucket, count)
 };
