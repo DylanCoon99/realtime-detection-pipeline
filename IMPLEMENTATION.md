@@ -26,7 +26,7 @@
 - [x] Implement real-time aggregation logic (sliding window counts, etc.)
 - [ ] Implement alert rules (e.g., person detected for N seconds)
 - [x] Integrate Redis client — write hot data (recent detections, aggregates)
-- [ ] Add Google Test unit tests
+- [x] Add Google Test unit tests
 - [ ] Write Dockerfile
 
 ## Phase 4: batch-processor (Python)
@@ -41,8 +41,8 @@
 ## Phase 5: api (Python/FastAPI)
 
 - [x] Set up FastAPI project structure
-- [ ] REST endpoints — query detections, aggregations, alerts
-- [ ] Redis integration — serve real-time data
+- [x] REST endpoints — real-time detections, counts, timeline
+- [x] Redis integration — serve real-time data
 - [ ] PostgreSQL integration — serve historical data
 - [ ] WebSocket endpoint — stream live annotated frames
 - [ ] Add pytest tests
@@ -53,8 +53,8 @@
 - [x] Scaffold React/TypeScript project (Vite + Tailwind)
 - [x] Live camera feed via MJPEG stream
 - [x] Stream connection status indicator
-- [ ] Detection timeline view
-- [ ] Object class distribution charts
+- [x] Detection timeline view
+- [x] Object class distribution charts
 - [ ] Alert configuration UI
 - [x] Write Dockerfile
 
