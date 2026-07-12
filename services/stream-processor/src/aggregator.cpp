@@ -32,18 +32,18 @@ DetectionEvent Aggregator::deserialize(const std::string& message) {
     uint32_t frame_number = parsed_json["frame_number"];
     int64_t timestamp = parsed_json["timestamp"];
     std::vector<Detection> detections;
-      for (const auto& d : parsed_json["detections"]) {
-          Detection det;
-          det.class_label = d["class"].get<std::string>();
-          det.confidence = d["confidence"].get<float>();
-          det.bbox = BoundingBox{
-              d["bbox"]["x"].get<int>(),
-              d["bbox"]["y"].get<int>(),
-              d["bbox"]["w"].get<int>(),
-              d["bbox"]["h"].get<int>()
-          };
-          detections.push_back(det);
-      }
+    for (const auto& d : parsed_json["detections"]) {
+        Detection det;
+        det.class_label = d["class"].get<std::string>();
+        det.confidence = d["confidence"].get<float>();
+        det.bbox = BoundingBox{
+            d["bbox"]["x"].get<int>(),
+            d["bbox"]["y"].get<int>(),
+            d["bbox"]["w"].get<int>(),
+            d["bbox"]["h"].get<int>()
+        };
+      detections.push_back(det);
+    }
     
     return DetectionEvent{frame_number, timestamp, detections};
 }

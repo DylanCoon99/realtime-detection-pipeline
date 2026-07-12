@@ -21,11 +21,11 @@
 
 ## Phase 3: stream-processor (C++)
 
-- [ ] Set up CMake project with src, include, test directories
-- [ ] Integrate librdkafka — consume detection events from Kafka
-- [ ] Implement real-time aggregation logic (sliding window counts, etc.)
+- [x] Set up CMake project with src, include, test directories
+- [x] Integrate librdkafka — consume detection events from Kafka
+- [x] Implement real-time aggregation logic (sliding window counts, etc.)
 - [ ] Implement alert rules (e.g., person detected for N seconds)
-- [ ] Integrate Redis client — write hot data (recent detections, aggregates)
+- [x] Integrate Redis client — write hot data (recent detections, aggregates)
 - [ ] Add Google Test unit tests
 - [ ] Write Dockerfile
 
@@ -40,7 +40,7 @@
 
 ## Phase 5: api (Python/FastAPI)
 
-- [ ] Set up FastAPI project structure
+- [x] Set up FastAPI project structure
 - [ ] REST endpoints — query detections, aggregations, alerts
 - [ ] Redis integration — serve real-time data
 - [ ] PostgreSQL integration — serve historical data
@@ -61,7 +61,7 @@
 ## Phase 7: Infrastructure & Deployment
 
 - [x] Set up Kafka (KRaft mode, no Zookeeper) in docker-compose
-- [ ] Set up Redis in docker-compose
+- [x] Set up Redis in docker-compose
 - [ ] Set up PostgreSQL in docker-compose
 - [x] Verify Kafka — produce/consume test messages from CLI
 - [ ] docker-compose.yml — wire all services together

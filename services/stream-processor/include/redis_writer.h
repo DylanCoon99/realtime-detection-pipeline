@@ -4,6 +4,7 @@
 #include <deque>
 #include <hiredis/hiredis.h>
 #include "types.h"
+#include "json.hpp"
 
 /*
     RedisWriter — writes aggregated detection state to Redis.

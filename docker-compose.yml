@@ -20,6 +20,14 @@ services:
       - kafka-data:/var/lib/kafka/data
     restart: unless-stopped
 
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+
   # --- Services (built from Dockerfile) ---
   capture-inference:
     build: ./services/capture-inference
@@ -41,3 +49,4 @@ services:
 
 volumes:
   kafka-data:
+  redis-data:
