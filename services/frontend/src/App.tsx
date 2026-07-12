@@ -1,9 +1,14 @@
 import { VideoFeed } from './components/VideoFeed';
 import { StatusIndicator } from './components/StatusIndicator';
+import { DetectionFeed } from './components/DetectionFeed';
+import { ClassChart } from './components/ClassChart';
+import { TimelineChart } from './components/TimelineChart';
 import { useStreamStatus } from './hooks/useStreamStatus';
+import { useDetectionData } from './hooks/useDetectionData';
 
 function App() {
   const connected = useStreamStatus();
+  const { classCounts, recentEvents, timeline } = useDetectionData();
 
   return (
     <div className="min-h-screen bg-gray-950 text-white">
@@ -18,7 +23,7 @@ function App() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto p-6">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Video Feed - takes 2/3 width on large screens */}
+          {/* Video Feed */}
           <div className="lg:col-span-2">
             <h2 className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-3">
               Live Feed
@@ -26,36 +31,28 @@ function App() {
             <VideoFeed connected={connected} />
           </div>
 
-          {/* Right panel - placeholder for Phase 2 */}
+          {/* Recent Detections */}
           <div>
             <h2 className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-3">
               Recent Detections
             </h2>
-            <div className="bg-gray-900 rounded-lg border border-gray-700 p-4 h-96 flex items-center justify-center">
-              <p className="text-gray-600 text-sm">
-                Detection feed coming in Phase 2
-              </p>
-            </div>
+            <DetectionFeed events={recentEvents} />
           </div>
         </div>
 
-        {/* Bottom panels - placeholder for Phase 2 */}
+        {/* Bottom panels */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
           <div>
             <h2 className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-3">
               Class Distribution
             </h2>
-            <div className="bg-gray-900 rounded-lg border border-gray-700 p-4 h-64 flex items-center justify-center">
-              <p className="text-gray-600 text-sm">Charts coming in Phase 2</p>
-            </div>
+            <ClassChart counts={classCounts} />
           </div>
           <div>
             <h2 className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-3">
               Detections Over Time
             </h2>
-            <div className="bg-gray-900 rounded-lg border border-gray-700 p-4 h-64 flex items-center justify-center">
-              <p className="text-gray-600 text-sm">Charts coming in Phase 2</p>
-            </div>
+            <TimelineChart timeline={timeline} />
           </div>
         </div>
       </main>

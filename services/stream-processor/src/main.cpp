@@ -1,14 +1,19 @@
 #include <iostream>
 #include "kafka_consumer.h"
+#include "aggregator.h"
+#include "redis_writer.h"
 
 int main() {
     KafkaConsumer consumer("localhost:29092", "detections", "stream-processor");
+    Aggregator aggregator;
+    RedisWriter writer("localhost", 6379);
 
-    std::cerr << "[main] Consuming from detections topic..." << std::endl;
+    std::cerr << "[main] Stream processor running..." << std::endl;
 
-    consumer.start([](const std::string& message) {
+    consumer.start([&](const std::string& message) {
         if (!message.empty()) {
-            std::cout << "[main] Received: " << message << std::endl;
+            aggregator.process(message);
+            writer.write(aggregator.state());
         }
     });
 

@@ -7,6 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/stream': 'http://localhost:8081',
+      '/api': 'http://localhost:8000',
     },
   },
 })
