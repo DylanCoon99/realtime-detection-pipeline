@@ -28,6 +28,19 @@ services:
       - redis-data:/data
     restart: unless-stopped
 
+  postgres:
+    image: postgres:16
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: detections
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+      - ./services/batch-processor/init.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: unless-stopped
+
   # --- Services (built from Dockerfile) ---
   capture-inference:
     build: ./services/capture-inference
@@ -50,3 +63,4 @@ services:
 volumes:
   kafka-data:
   redis-data:
+  pg-data:

@@ -3,6 +3,7 @@ import { StatusIndicator } from './components/StatusIndicator';
 import { DetectionFeed } from './components/DetectionFeed';
 import { ClassChart } from './components/ClassChart';
 import { TimelineChart } from './components/TimelineChart';
+import { HistoryPanel } from './components/HistoryPanel';
 import { useStreamStatus } from './hooks/useStreamStatus';
 import { useDetectionData } from './hooks/useDetectionData';
 
@@ -22,6 +23,7 @@ function App() {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto p-6">
+        {/* Live section */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Video Feed */}
           <div className="lg:col-span-2">
@@ -40,7 +42,7 @@ function App() {
           </div>
         </div>
 
-        {/* Bottom panels */}
+        {/* Real-time charts */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
           <div>
             <h2 className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-3">
@@ -54,6 +56,12 @@ function App() {
             </h2>
             <TimelineChart timeline={timeline} />
           </div>
+        </div>
+
+        {/* Historical section */}
+        <div className="mt-10 border-t border-gray-800 pt-6">
+          <h2 className="text-lg font-semibold mb-4">Historical Data</h2>
+          <HistoryPanel />
         </div>
       </main>
     </div>

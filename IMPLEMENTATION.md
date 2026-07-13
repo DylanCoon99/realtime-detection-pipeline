@@ -31,10 +31,11 @@
 
 ## Phase 4: batch-processor (Python)
 
-- [ ] Set up project structure with requirements.txt
-- [ ] Implement Kafka consumer for detection events
-- [ ] Implement scheduled aggregation (hourly/daily summaries)
-- [ ] Integrate PostgreSQL — write historical aggregations
+- [x] Set up project structure with requirements.txt
+- [x] Implement Kafka consumer for detection events
+- [x] Implement scheduled aggregation (hourly/daily summaries)
+- [x] Integrate PostgreSQL — write historical aggregations
+- [x] Create init.sql schema (detections + hourly_summaries tables)
 - [ ] Add pytest tests
 - [ ] Write Dockerfile
 
@@ -43,8 +44,8 @@
 - [x] Set up FastAPI project structure
 - [x] REST endpoints — real-time detections, counts, timeline
 - [x] Redis integration — serve real-time data
-- [ ] PostgreSQL integration — serve historical data
-- [ ] WebSocket endpoint — stream live annotated frames
+- [x] PostgreSQL integration — serve historical data
+- [x] Add historical query endpoints (time range, hourly/daily summaries)
 - [ ] Add pytest tests
 - [ ] Write Dockerfile
 
@@ -62,7 +63,7 @@
 
 - [x] Set up Kafka (KRaft mode, no Zookeeper) in docker-compose
 - [x] Set up Redis in docker-compose
-- [ ] Set up PostgreSQL in docker-compose
+- [x] Set up PostgreSQL in docker-compose
 - [x] Verify Kafka — produce/consume test messages from CLI
 - [ ] docker-compose.yml — wire all services together
 - [ ] Caddyfile — reverse proxy with SSL
