@@ -56,6 +56,7 @@
 - [x] Stream connection status indicator
 - [x] Detection timeline view
 - [x] Object class distribution charts
+- [x] Historical data panel with date range queries
 - [ ] Alert configuration UI
 - [x] Write Dockerfile
 

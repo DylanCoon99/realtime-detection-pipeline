@@ -10,11 +10,11 @@ A self-hosted real-time video analytics system running on a Raspberry Pi 5 (8GB)
 
 | Service | Language | Description |
 |---------|----------|-------------|
-| `capture-inference` | C++ | Captures webcam frames via OpenCV, runs YOLOv8 inference via ONNX Runtime, publishes detection events to Kafka, and streams annotated frames directly to the API |
-| `stream-processor` | C++ | Kafka consumer that aggregates detections in real-time, applies alert rules, writes hot data to Redis |
-| `batch-processor` | Python | Scheduled aggregation of historical detection data, writes to PostgreSQL |
-| `api` | Python (FastAPI) | REST API serving detection data, WebSocket endpoint for live annotated video feed |
-| `frontend` | React/TypeScript | Live camera feed with bounding box overlays, detection timeline, object class charts, alert configuration |
+| `capture-inference` | C++ | Captures webcam frames via OpenCV, runs YOLOv8 inference via ONNX Runtime, publishes detection events to Kafka, serves annotated frames via MJPEG stream |
+| `stream-processor` | C++ | Kafka consumer that aggregates detections in real-time using sliding window, writes hot data to Redis |
+| `batch-processor` | Python | Consumes detection events from Kafka, writes to PostgreSQL, runs scheduled hourly aggregation and cleanup |
+| `api` | Python (FastAPI) | REST API serving real-time data from Redis and historical data from PostgreSQL |
+| `frontend` | React/TypeScript | Live video feed via MJPEG, real-time detection charts, historical data queries with date range picker |
 
 ### Data Flow
 
@@ -31,8 +31,8 @@ capture-inference (C++)
   ├── 3. Run inference → get detections
   ├── 4. Draw bounding boxes on the frame
   |
-  ├──▶ Send annotated frame → API → WebSocket → React dashboard (live video)
-  └──▶ Send detection event → Kafka (just the metadata, no image)
+  ├──▶ MJPEG stream (:8081/stream) → React dashboard (live video)
+  └──▶ Detection event → Kafka (JSON metadata, no image)
                                  |
                            ┌─────┴─────┐
                            ▼           ▼
@@ -51,8 +51,11 @@ capture-inference (C++)
                           (charts, timeline, alerts)
 ```
 
-- **Annotated frames** go directly from `capture-inference` to the API via WebSocket. The frontend displays these as a live video feed with bounding box overlays.
-- **Detection events** (small JSON: timestamp, class, confidence, bbox coordinates) go through Kafka for processing and storage. The frontend queries these via REST API for charts, timeline, and alerts.
+- **Annotated frames** are served directly from `capture-inference` as an MJPEG stream. The frontend displays these via a simple `<img>` tag — no WebSocket or API proxy needed.
+- **Detection events** (small JSON: timestamp, class, confidence, bbox coordinates) go through Kafka to two consumers:
+  - **stream-processor** aggregates in real-time (sliding window counts, recent events) and writes to Redis
+  - **batch-processor** writes every event to PostgreSQL and runs scheduled hourly aggregation
+- The **API** reads from both Redis (real-time) and PostgreSQL (historical) and serves the frontend.
 
 These paths are independent — if Kafka lags, video still plays. If the video stream drops, charts still update.
 
@@ -74,7 +77,7 @@ These paths are independent — if Kafka lags, video still plays. If the video s
 **Languages:** C++17, Python, TypeScript
 **ML:** YOLOv8, ONNX Runtime
 **Streaming:** Apache Kafka (librdkafka)
-**Backend:** FastAPI, WebSockets
+**Backend:** FastAPI
 **Frontend:** React, TypeScript
 **Databases:** PostgreSQL, Redis
 **Infrastructure:** Docker, Docker Compose, GitHub Actions, Prometheus, Grafana, Caddy
@@ -90,7 +93,6 @@ realtime-detection-pipeline/
 │   ├── batch-processor/       # Python batch aggregation
 │   ├── api/                   # FastAPI REST server
 │   └── frontend/              # React dashboard
-├── infra/                     # Infrastructure config (Kafka, Redis, Postgres, etc.)
 ├── docker-compose.yml
 ├── Caddyfile
 ├── prometheus.yml
@@ -119,16 +121,26 @@ realtime-detection-pipeline/
 # Start infrastructure services (Kafka, Redis, PostgreSQL)
 docker compose up -d kafka redis postgres
 
-# Build and run C++ services locally
+# Build and run capture-inference
 cd services/capture-inference
-mkdir build && cd build
-cmake .. && make -j$(nproc)
-./capture-inference
+cmake -B build && cmake --build build --config Debug
+export MODEL_PATH="$(pwd)/models/yolov8n.onnx"
+./build/bin/Debug/capture-inference
+
+# Run stream-processor
+cd services/stream-processor
+cmake -B build && cmake --build build --config Debug
+./build/bin/stream-processor
+
+# Run batch-processor
+cd services/batch-processor
+pip install -r requirements.txt
+python main.py
 
 # Run API
 cd services/api
 pip install -r requirements.txt
-uvicorn main:app --reload
+uvicorn main:app --reload --port 8000
 
 # Run frontend
 cd services/frontend
@@ -160,4 +172,4 @@ Self-hosted on a Raspberry Pi 5 (8GB). GitHub Actions builds ARM64 Docker images
 
 ## Status
 
-**Pre-development.** Prerequisites: complete C++ build systems (CMake) and testing (Google Test) modules first.
+**In development.** All core services are functional. Real-time pipeline (capture-inference → Kafka → stream-processor → Redis → API → dashboard) and historical pipeline (Kafka → batch-processor → PostgreSQL → API → dashboard) are working end-to-end locally. Remaining: Dockerfiles for stream-processor and batch-processor, Caddy reverse proxy, Prometheus/Grafana monitoring, CI/CD, and deployment to Raspberry Pi 5.
