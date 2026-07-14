@@ -1,12 +1,23 @@
 import json
+import os
 import threading
 from kafka_consumer import BatchKafkaConsumer
 from db import Database
 from aggregator import Aggregator
 
 def main():
-    db = Database(host="localhost", port=5433, dbname="detections", user="postgres", password="postgres")
-    consumer = BatchKafkaConsumer(broker="localhost:29092", topic="detections", group_id="batch-processor")
+    db = Database(
+        host=os.getenv("POSTGRES_HOST", "localhost"),
+        port=int(os.getenv("POSTGRES_PORT", "5433")),
+        dbname=os.getenv("POSTGRES_DB", "detections"),
+        user=os.getenv("POSTGRES_USER", "postgres"),
+        password=os.getenv("POSTGRES_PASSWORD", "postgres"),
+    )
+    consumer = BatchKafkaConsumer(
+        broker=os.getenv("KAFKA_BROKER", "localhost:29092"),
+        topic="detections",
+        group_id="batch-processor",
+    )
     aggregator = Aggregator(db)
 
     # Run scheduled aggregation in a background thread

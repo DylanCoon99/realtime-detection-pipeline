@@ -156,14 +156,15 @@ docker compose up -d
 ### Running Tests
 
 ```bash
-# C++ tests
-cd services/capture-inference/build && ctest
+# capture-inference tests
+cd services/capture-inference
+cmake --build build --config Debug --target capture-inference_tests
+cd build && ctest --output-on-failure -C Debug
 
-# Python tests
-cd services/api && pytest
-
-# Integration tests
-docker compose -f docker-compose.test.yml up --abort-on-container-exit
+# stream-processor tests
+cd services/stream-processor
+cmake --build build --config Debug --target stream-processor_tests
+cd build && ctest --output-on-failure -C Debug
 ```
 
 ## Deployment
@@ -172,4 +173,4 @@ Self-hosted on a Raspberry Pi 5 (8GB). GitHub Actions builds ARM64 Docker images
 
 ## Status
 
-**In development.** All core services are functional. Real-time pipeline (capture-inference → Kafka → stream-processor → Redis → API → dashboard) and historical pipeline (Kafka → batch-processor → PostgreSQL → API → dashboard) are working end-to-end locally. Remaining: Dockerfiles for stream-processor and batch-processor, Caddy reverse proxy, Prometheus/Grafana monitoring, CI/CD, and deployment to Raspberry Pi 5.
+**In development.** All core services are functional and Dockerized. Both the real-time pipeline (capture-inference → Kafka → stream-processor → Redis → API → dashboard) and historical pipeline (Kafka → batch-processor → PostgreSQL → API → dashboard) are working end-to-end. All services are wired together in docker-compose with environment-based configuration. Remaining: Caddy reverse proxy with SSL, Prometheus/Grafana monitoring, GitHub Actions CI/CD, and deployment to Raspberry Pi 5.

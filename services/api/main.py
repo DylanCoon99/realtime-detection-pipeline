@@ -4,6 +4,7 @@ import redis
 import psycopg2
 import psycopg2.extras
 import json
+import os
 from datetime import datetime
 
 app = FastAPI(title="Detection Pipeline API")
@@ -15,13 +16,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-r = redis.Redis(host="localhost", port=6379, decode_responses=True)
+r = redis.Redis(
+    host=os.getenv("REDIS_HOST", "localhost"),
+    port=int(os.getenv("REDIS_PORT", "6379")),
+    decode_responses=True,
+)
 
 
 def get_db():
     return psycopg2.connect(
-        dbname="detections", user="postgres", password="postgres",
-        host="localhost", port=5433
+        dbname=os.getenv("POSTGRES_DB", "detections"),
+        user=os.getenv("POSTGRES_USER", "postgres"),
+        password=os.getenv("POSTGRES_PASSWORD", "postgres"),
+        host=os.getenv("POSTGRES_HOST", "localhost"),
+        port=int(os.getenv("POSTGRES_PORT", "5433")),
     )
 
 

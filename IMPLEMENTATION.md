@@ -66,7 +66,7 @@
 - [x] Set up Redis in docker-compose
 - [x] Set up PostgreSQL in docker-compose
 - [x] Verify Kafka — produce/consume test messages from CLI
-- [ ] docker-compose.yml — wire all services together
+- [x] docker-compose.yml — wire all services together
 - [ ] Caddyfile — reverse proxy with SSL
 - [ ] prometheus.yml — metrics collection
 - [ ] Grafana dashboards

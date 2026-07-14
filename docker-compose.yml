@@ -46,10 +46,55 @@ services:
     build: ./services/capture-inference
     ports:
       - "8081:8081"
+    environment:
+      MODEL_PATH: /app/models/yolov8n.onnx
+      KAFKA_BROKER: kafka:9092
     devices:
       - /dev/video0:/dev/video0
     depends_on:
       - kafka
+    restart: unless-stopped
+
+  stream-processor:
+    build: ./services/stream-processor
+    environment:
+      KAFKA_BROKER: kafka:9092
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+    depends_on:
+      - kafka
+      - redis
+    restart: unless-stopped
+
+  batch-processor:
+    build: ./services/batch-processor
+    environment:
+      KAFKA_BROKER: kafka:9092
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: detections
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    depends_on:
+      - kafka
+      - postgres
+    restart: unless-stopped
+
+  api:
+    build: ./services/api
+    ports:
+      - "8000:8000"
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: detections
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    depends_on:
+      - redis
+      - postgres
     restart: unless-stopped
 
   frontend:
@@ -58,6 +103,7 @@ services:
       - "3000:80"
     depends_on:
       - capture-inference
+      - api
     restart: unless-stopped
 
 volumes:
