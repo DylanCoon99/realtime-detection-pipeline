@@ -21,7 +21,7 @@ r = redis.Redis(host="localhost", port=6379, decode_responses=True)
 def get_db():
     return psycopg2.connect(
         dbname="detections", user="postgres", password="postgres",
-        host="localhost", port=5432
+        host="localhost", port=5433
     )
 
 

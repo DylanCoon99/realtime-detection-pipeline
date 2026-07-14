@@ -5,7 +5,7 @@ from db import Database
 from aggregator import Aggregator
 
 def main():
-    db = Database(host="localhost", port=5432, dbname="detections", user="postgres", password="postgres")
+    db = Database(host="localhost", port=5433, dbname="detections", user="postgres", password="postgres")
     consumer = BatchKafkaConsumer(broker="localhost:29092", topic="detections", group_id="batch-processor")
     aggregator = Aggregator(db)
 

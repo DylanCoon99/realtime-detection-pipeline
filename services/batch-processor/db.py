@@ -15,7 +15,7 @@ class Database:
             self.connection.autocommit = False
             print(f"[Database] Connected to PostgreSQL at {host}:{port}/{dbname}")
         except (Exception, psycopg2.Error) as error:
-            print(f"Error while connecting to PostgreSQL: {error}")
+            raise RuntimeError(f"Failed to connect to PostgreSQL: {error}")
 
     def close(self):
         if self.connection:

@@ -27,7 +27,7 @@
 - [ ] Implement alert rules (e.g., person detected for N seconds)
 - [x] Integrate Redis client — write hot data (recent detections, aggregates)
 - [x] Add Google Test unit tests
-- [ ] Write Dockerfile
+- [x] Write Dockerfile
 
 ## Phase 4: batch-processor (Python)
 
@@ -37,7 +37,7 @@
 - [x] Integrate PostgreSQL — write historical aggregations
 - [x] Create init.sql schema (detections + hourly_summaries tables)
 - [ ] Add pytest tests
-- [ ] Write Dockerfile
+- [x] Write Dockerfile
 
 ## Phase 5: api (Python/FastAPI)
 
@@ -47,7 +47,7 @@
 - [x] PostgreSQL integration — serve historical data
 - [x] Add historical query endpoints (time range, hourly/daily summaries)
 - [ ] Add pytest tests
-- [ ] Write Dockerfile
+- [x] Write Dockerfile
 
 ## Phase 6: frontend (React/TypeScript)
 

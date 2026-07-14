@@ -22,8 +22,7 @@ interface HistoricalData {
   detections: HistoricalDetection[];
   hourly: HourlySummary[];
   loading: boolean;
-  fetchHistory: (start: string, end: string, classLabel?: string) => void;
-  fetchHourly: (start: string, end: string, classLabel?: string) => void;
+  query: (start: string, end: string, classLabel?: string) => void;
 }
 
 export function useHistoricalData(): HistoricalData {
@@ -31,31 +30,32 @@ export function useHistoricalData(): HistoricalData {
   const [hourly, setHourly] = useState<HourlySummary[]>([]);
   const [loading, setLoading] = useState(false);
 
-  const fetchHistory = useCallback(async (start: string, end: string, classLabel?: string) => {
+  const query = useCallback(async (start: string, end: string, classLabel?: string) => {
     setLoading(true);
     try {
-      let url = `/api/detections/history?start=${start}&end=${end}`;
-      if (classLabel) url += `&class_label=${classLabel}`;
-      const res = await fetch(url);
-      if (res.ok) setDetections(await res.json());
+      // Append seconds if missing (datetime-local gives "2026-07-12T00:00")
+      const s = start.length === 16 ? start + ':00' : start;
+      const e = end.length === 16 ? end + ':00' : end;
+
+      let historyUrl = `/api/detections/history?start=${s}&end=${e}`;
+      let hourlyUrl = `/api/detections/hourly?start=${s}&end=${e}`;
+      if (classLabel) {
+        historyUrl += `&class_label=${classLabel}`;
+        hourlyUrl += `&class_label=${classLabel}`;
+      }
+
+      const [historyRes, hourlyRes] = await Promise.all([
+        fetch(historyUrl),
+        fetch(hourlyUrl),
+      ]);
+
+      if (historyRes.ok) setDetections(await historyRes.json());
+      if (hourlyRes.ok) setHourly(await hourlyRes.json());
     } catch {
       // API not available
     }
     setLoading(false);
   }, []);
 
-  const fetchHourly = useCallback(async (start: string, end: string, classLabel?: string) => {
-    setLoading(true);
-    try {
-      let url = `/api/detections/hourly?start=${start}&end=${end}`;
-      if (classLabel) url += `&class_label=${classLabel}`;
-      const res = await fetch(url);
-      if (res.ok) setHourly(await res.json());
-    } catch {
-      // API not available
-    }
-    setLoading(false);
-  }, []);
-
-  return { detections, hourly, loading, fetchHistory, fetchHourly };
+  return { detections, hourly, loading, query };
 }

@@ -16,24 +16,28 @@ const COLORS = [
 ];
 
 export function HistoryPanel() {
-  const { detections, hourly, loading, fetchHistory, fetchHourly } = useHistoricalData();
+  const { detections, hourly, loading, query } = useHistoricalData();
   const [start, setStart] = useState('');
   const [end, setEnd] = useState('');
   const [classFilter, setClassFilter] = useState('');
 
   const handleQuery = () => {
     if (!start || !end) return;
-    fetchHistory(start, end, classFilter || undefined);
-    fetchHourly(start, end, classFilter || undefined);
+    query(start, end, classFilter || undefined);
   };
 
-  // Aggregate hourly data for chart
-  const hourlyChartData = hourly.reduce<Record<string, number>>((acc, row) => {
-    acc[row.class_label] = (acc[row.class_label] || 0) + row.count;
-    return acc;
-  }, {});
+  // Aggregate from raw detections if no hourly summaries exist yet
+  const countSource = hourly.length > 0
+    ? hourly.reduce<Record<string, number>>((acc, row) => {
+        acc[row.class_label] = (acc[row.class_label] || 0) + row.count;
+        return acc;
+      }, {})
+    : detections.reduce<Record<string, number>>((acc, row) => {
+        acc[row.class_label] = (acc[row.class_label] || 0) + 1;
+        return acc;
+      }, {});
 
-  const chartData = Object.entries(hourlyChartData)
+  const chartData = Object.entries(countSource)
     .map(([name, count]) => ({ name, count }))
     .sort((a, b) => b.count - a.count);
 
