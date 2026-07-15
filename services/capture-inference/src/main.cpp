@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 #include <opencv2/opencv.hpp>
 #include <onnxruntime_cxx_api.h>
 #include "pipeline.h"
@@ -24,7 +25,8 @@ int main() {
 
     // Kafka Publisher
     std::cerr << "[main] Creating Kafka publisher..." << std::endl;
-    KafkaPublisher publisher("localhost:29092", "detections");
+    const char* kafka_broker = std::getenv("KAFKA_BROKER");
+    KafkaPublisher publisher(kafka_broker ? kafka_broker : "localhost:29092", "detections");
     std::cerr << "[main] Kafka publisher created." << std::endl;
 
     std::cerr << "[main] Pipeline running. Press Ctrl+C to stop." << std::endl;
