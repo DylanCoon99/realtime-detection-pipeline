@@ -20,7 +20,7 @@ int main() {
     bool running = true;
     
     // MJPEG Streamer
-    MjpegStreamer streamer(8081, 80);
+    MjpegStreamer streamer(8081, 60);
     streamer.start();
 
     // Kafka Publisher

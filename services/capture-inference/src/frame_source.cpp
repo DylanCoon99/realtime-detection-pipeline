@@ -11,6 +11,8 @@ Source::Source(std::string source_name, int source_id)
     if (!cap_.isOpened()) {
         throw std::runtime_error("Failed to open video source: " + source_name_);
     }
+    cap_.set(cv::CAP_PROP_FRAME_WIDTH, 640);
+    cap_.set(cv::CAP_PROP_FRAME_HEIGHT, 480);
 }
 
 Source::Source(std::string source_name, const std::string& path)
