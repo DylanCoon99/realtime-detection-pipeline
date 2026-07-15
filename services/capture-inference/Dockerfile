@@ -59,7 +59,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libopencv-videoio-dev \
     libopencv-dnn-dev \
     libopencv-highgui-dev \
-    librdkafka1 \
+    librdkafka-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy ONNX Runtime shared library

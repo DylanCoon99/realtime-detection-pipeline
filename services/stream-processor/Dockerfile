@@ -27,8 +27,8 @@ FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    librdkafka1 \
-    libhiredis0.14 \
+    librdkafka-dev \
+    libhiredis-dev \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /app/build/bin/stream-processor /usr/local/bin/
