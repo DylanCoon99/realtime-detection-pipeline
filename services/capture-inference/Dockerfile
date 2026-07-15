@@ -28,6 +28,9 @@ RUN if [ "$TARGETARCH" = "arm64" ]; then \
     rm /tmp/onnxruntime.tgz && \
     if [ ! -d /opt/onnxruntime/lib64 ]; then \
         ln -s /opt/onnxruntime/lib /opt/onnxruntime/lib64; \
+    fi && \
+    if [ ! -d /opt/onnxruntime/include/onnxruntime ]; then \
+        ln -s /opt/onnxruntime/include /opt/onnxruntime/include/onnxruntime; \
     fi
 
 ENV ONNXRUNTIME_ROOT=/opt/onnxruntime
