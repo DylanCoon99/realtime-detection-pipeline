@@ -69,14 +69,8 @@ RUN ldconfig
 # Copy built binary
 COPY --from=builder /app/build/bin/capture-inference /usr/local/bin/
 
-# Download model
-RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates && \
-    mkdir -p /app/models && \
-    curl -L --fail -o /app/models/yolov8n.onnx \
-        "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n.onnx" && \
-    test $(stat -c%s /app/models/yolov8n.onnx) -gt 1000000 && \
-    apt-get purge -y curl ca-certificates && apt-get autoremove -y && \
-    rm -rf /var/lib/apt/lists/*
+# Copy model from local
+COPY models/yolov8n.onnx /app/models/yolov8n.onnx
 
 ENV MODEL_PATH=/app/models/yolov8n.onnx
 
