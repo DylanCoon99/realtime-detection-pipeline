@@ -25,7 +25,10 @@ RUN if [ "$TARGETARCH" = "arm64" ]; then \
         "https://github.com/microsoft/onnxruntime/releases/download/v${ONNXRT_VERSION}/onnxruntime-linux-${ONNXRT_ARCH}-${ONNXRT_VERSION}.tgz" && \
     tar -xzf /tmp/onnxruntime.tgz -C /opt && \
     mv /opt/onnxruntime-linux-${ONNXRT_ARCH}-${ONNXRT_VERSION} /opt/onnxruntime && \
-    rm /tmp/onnxruntime.tgz
+    rm /tmp/onnxruntime.tgz && \
+    if [ -d /opt/onnxruntime/lib64 ] && [ ! -d /opt/onnxruntime/lib ]; then \
+        ln -s /opt/onnxruntime/lib64 /opt/onnxruntime/lib; \
+    fi
 
 ENV ONNXRUNTIME_ROOT=/opt/onnxruntime
 ENV CMAKE_PREFIX_PATH=/opt/onnxruntime
@@ -62,8 +65,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     librdkafka-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy ONNX Runtime shared library
-COPY --from=builder /opt/onnxruntime/lib/libonnxruntime.so* /usr/local/lib/
+# Copy ONNX Runtime shared library (lib or lib64 depending on version)
+COPY --from=builder /opt/onnxruntime/lib/ /usr/local/lib/
 RUN ldconfig
 
 # Copy built binary
