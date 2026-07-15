@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Install ONNX Runtime
-ARG ONNXRT_VERSION=1.18.1
+ARG ONNXRT_VERSION=1.22.0
 ARG TARGETARCH
 RUN if [ "$TARGETARCH" = "arm64" ]; then \
         ONNXRT_ARCH="aarch64"; \
