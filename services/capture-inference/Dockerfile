@@ -26,8 +26,8 @@ RUN if [ "$TARGETARCH" = "arm64" ]; then \
     tar -xzf /tmp/onnxruntime.tgz -C /opt && \
     mv /opt/onnxruntime-linux-${ONNXRT_ARCH}-${ONNXRT_VERSION} /opt/onnxruntime && \
     rm /tmp/onnxruntime.tgz && \
-    if [ -d /opt/onnxruntime/lib64 ] && [ ! -d /opt/onnxruntime/lib ]; then \
-        ln -s /opt/onnxruntime/lib64 /opt/onnxruntime/lib; \
+    if [ ! -d /opt/onnxruntime/lib64 ]; then \
+        ln -s /opt/onnxruntime/lib /opt/onnxruntime/lib64; \
     fi
 
 ENV ONNXRUNTIME_ROOT=/opt/onnxruntime
