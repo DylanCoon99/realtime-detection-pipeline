@@ -67,8 +67,5 @@
 - [x] Set up PostgreSQL in docker-compose
 - [x] Verify Kafka — produce/consume test messages from CLI
 - [x] docker-compose.yml — wire all services together
-- [ ] Caddyfile — reverse proxy with SSL
-- [ ] prometheus.yml — metrics collection
-- [ ] Grafana dashboards
 - [ ] GitHub Actions CI/CD pipeline
 - [ ] Deploy to Raspberry Pi 5

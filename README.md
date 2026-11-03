@@ -66,9 +66,6 @@ These paths are independent — if Kafka lags, video still plays. If the video s
 | Apache Kafka | Event streaming between services |
 | PostgreSQL | Persistent storage for historical detections and aggregations |
 | Redis | Hot data cache for real-time aggregates and recent detections |
-| Caddy | Reverse proxy with automatic SSL |
-| Prometheus | Metrics collection from all services |
-| Grafana | Monitoring dashboards and alerting |
 | Docker Compose | Container orchestration for the full stack |
 | GitHub Actions | CI/CD pipeline (test, build, deploy to home server) |
 
@@ -80,7 +77,7 @@ These paths are independent — if Kafka lags, video still plays. If the video s
 **Backend:** FastAPI
 **Frontend:** React, TypeScript
 **Databases:** PostgreSQL, Redis
-**Infrastructure:** Docker, Docker Compose, GitHub Actions, Prometheus, Grafana, Caddy
+**Infrastructure:** Docker, Docker Compose, GitHub Actions
 **Build:** CMake, Google Test
 
 ## Project Structure
@@ -94,8 +91,6 @@ realtime-detection-pipeline/
 │   ├── api/                   # FastAPI REST server
 │   └── frontend/              # React dashboard
 ├── docker-compose.yml
-├── Caddyfile
-├── prometheus.yml
 ├── docs/
 │   └── architecture.png
 ├── .github/
@@ -173,4 +168,4 @@ Self-hosted on a Raspberry Pi 5 (8GB). GitHub Actions builds ARM64 Docker images
 
 ## Status
 
-**In development.** All core services are functional and Dockerized. Both the real-time pipeline (capture-inference → Kafka → stream-processor → Redis → API → dashboard) and historical pipeline (Kafka → batch-processor → PostgreSQL → API → dashboard) are working end-to-end. All services are wired together in docker-compose with environment-based configuration. Remaining: Caddy reverse proxy with SSL, Prometheus/Grafana monitoring, GitHub Actions CI/CD, and deployment to Raspberry Pi 5.
+**In development.** All core services are functional and Dockerized. Both the real-time pipeline (capture-inference → Kafka → stream-processor → Redis → API → dashboard) and historical pipeline (Kafka → batch-processor → PostgreSQL → API → dashboard) are working end-to-end. All services are wired together in docker-compose with environment-based configuration. Remaining: GitHub Actions CI/CD and deployment to Raspberry Pi 5.
